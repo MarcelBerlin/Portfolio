@@ -1,0 +1,262 @@
+.headerDiv {
+    width: 100vw;
+    max-width: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141D2F;
+    display: flex;
+
+
+}
+
+.headerImg {
+    margin-left: 150px;
+
+    img {
+        width: 160px;
+        height: 160px;
+        object-fit: contain;
+        cursor: pointer;
+    }
+}
+
+.headerMenu {
+    margin-right: 150px;
+    display: flex;    
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 120%;
+        margin-right: 30px;
+        transition: all 125ms ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            color: #70E61C;
+            
+        }
+    }
+    
+    
+}
+
+
+.de-en {
+    &:hover {
+        cursor: pointer;
+        color: rgb(0, 190, 232);
+    }
+}
+
+.d-none {
+    display: none;
+}
+
+.stroke {
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.language {
+    color: #4B47FF !important;
+}
+
+// ===========================
+// ===== - 27-30 zoll - ======
+// ===========================
+
+@media (min-width: 2000px) {
+    .headerDiv {
+        height: 200px;
+    }
+
+    .headerMenu {
+        a {
+            font-size: 50px;
+        }
+    }
+
+    .headerImg {
+        img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
+
+// ===========================
+// ======== - Media - ========
+// ===========================
+
+@media (min-width: 960px) {
+    .headerMenuMobilDiv {
+        display: none;
+    }
+}
+
+@media (max-width: 959px) {
+
+    .headerMenu {
+        display: none;
+    }
+
+    .headerImg {
+        margin-left: 10px;
+    }
+
+    .headerMenuMobilDiv {
+        overflow: hidden;
+        width: 100vw;
+        max-width: 100%;
+
+        img {
+            z-index: 2;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    }
+}
+
+.wrapper {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    background: rgb(21, 30, 48, 0.9);
+    transition: all 0.6s ease-in-out;
+}
+
+#active:checked~.wrapper {
+    right: 0;
+}
+
+.menu-btn {
+    position: absolute;
+    z-index: 5;
+    right: 20px;
+    top: 10px;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-btn span,
+.menu-btn:before,
+.menu-btn:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 30%;
+    width: 40%;
+    border-bottom: 2px solid white;
+    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.menu-btn:before {
+    transform: translateY(-8px);
+}
+
+.menu-btn:after {
+    transform: translateY(8px);
+}
+
+.close {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transition: background .6s;
+}
+
+/* closing animation */
+#active:checked+.menu-btn span {
+    transform: scaleX(0);
+}
+
+#active:checked+.menu-btn:before {
+    transform: rotate(45deg);
+    border-color: #fff;
+}
+
+#active:checked+.menu-btn:after {
+    transform: rotate(-45deg);
+    border-color: #fff;
+}
+
+.wrapper ul {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper ul li {
+    height: 10%;
+    margin: 15px 0;
+}
+
+.wrapper ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    transition: all 125ms ease-in-out;
+    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.wrapper ul li a:after {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(0, 190, 232);
+}
+
+.wrapper ul li a:hover:after {
+    transform: scaleY(1);
+}
+
+.wrapper ul li a:hover {
+    color: #1a73e8;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+@media (max-width: 400px) {
+    .wrapper ul li a {
+        font-size: 23px;
+    }
+}
