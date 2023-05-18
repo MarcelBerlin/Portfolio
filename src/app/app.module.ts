@@ -12,10 +12,9 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
-import { StartNameComponent } from './start-name/start-name.component';
-import { StartComponent } from './start/start.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { StartComponent } from './start/start.component';
 
 @NgModule({
   declarations: [
@@ -27,9 +26,9 @@ import { HttpClientModule } from '@angular/common/http';
     ImprintComponent,
     MainpageComponent,
     PortfolioComponent,
+    StartComponent,
     SkillsComponent,
-    StartNameComponent,
-    StartComponent
+    
   ],
   imports: [
     BrowserModule,
