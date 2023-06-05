@@ -255,8 +255,15 @@
 
 }
 
+.line-and-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
 .purple-line {
-    min-width: 15vh;
+    min-width: 150px;
     position: relative;
     margin: 16px;
     margin-left: 0;
@@ -270,6 +277,7 @@
     display: flex;
     align-items: center;
     color: white;
+    margin-left: 20px;
 
     @media(max-width: 1000px) {
         justify-content: space-evenly;
@@ -327,8 +335,10 @@
 
     img {
         z-index: 2;
-        width: 20vw;
-        height: 120vh;
+        position: absolute;        
+        height: 870px;
+        top: 750px;
+        filter: blur(20.5px);
 
         @media(max-width: 1000px) {
             height: 80vh;
