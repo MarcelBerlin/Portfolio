@@ -1,8 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html {
+    scroll-behavior: smooth;
+}
 
 body { 
-    margin: 0; 
-    font-family: 'Poppins', sans-serif; 
+    margin: 0;     
+    font-family: 'Poppins', 'sans-serif';
+    overflow: overlay;
+    
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #9747FF;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #9747FF;
+    border-radius: 5px;
 }
