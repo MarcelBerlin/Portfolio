@@ -1,1 +1,21 @@
-<p>skills works!</p>
+<div class="skills-container" id="skills">
+
+    <div class="my-skills">
+        <div *ngFor="let skill of mySkills" class="skills-icons-row">
+            <div data-aos="zoom-in-up" class="skills-icons">
+                <img src="/assets/img/Icon/{{ skill.img }}">
+                <span>{{ skill.name }}</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="skills-text">
+        <h1 data-aos="zoom-in-up" translate>My Skills</h1>
+
+        <div data-aos=""></div>
+    </div>
+
+
+</div>
