@@ -10,7 +10,7 @@
     
     <div class="zIndex" *ngFor="let project of projects; let i = index">
 
-        <div *ngIf="i % 2 == 0" class="portfolio-project1">
+        <div *ngIf="i % 1 == 0" class="portfolio-project1">
             <div class="project-description">
                 <h1>{{ project.name }}</h1>
                 <h2>{{ project.language }}</h2>
@@ -20,6 +20,10 @@
                     <a href="{{ project.linkGit }}" target="_blank"><button class="github-btn">Github</button></a>
 
                 </div>
+            </div>
+
+            <div *ngIf="i % 1 == 0" class="project-img">
+                <img src="/assets/img/{{ project.img }}">
             </div>
 
         </div>
