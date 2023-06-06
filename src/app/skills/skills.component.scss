@@ -4,8 +4,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 120px;
-    padding-bottom: 10%;
+    padding-left: 150px;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
 }
 
 .my-skills {
@@ -33,6 +34,7 @@
     align-items: center;
     justify-content: center;
     color: white;
+    margin-top: 15px;
     width: 180px;
     height: 180px;
 
@@ -41,7 +43,7 @@
         width: 8vw;
         height: 8vh;
         object-fit: contain;
-        margin: 16px;
+        margin: 18px;
 
         &:hover {
             cursor: pointer;

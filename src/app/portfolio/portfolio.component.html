@@ -1,1 +1,35 @@
-<p>portfolio works!</p>
+<div class="portfolio-container">
+
+    <div class="portfolio-horizontal-small"></div>
+    <div class="portfolio-horizontal-big"></div>
+
+    <div class="portfolio-section-title" data-aos="fade-up">        
+        <h1>Portfolio</h1>
+        <span>The following applications are a small sample of my work - please feel free to try them out.</span>
+    </div>
+    
+    <div class="zIndex" *ngFor="let project of projects; let i = index">
+
+        <div *ngIf="i % 2 == 0" class="portfolio-project1">
+            <div class="project-description">
+                <h1>{{ project.name }}</h1>
+                <h2>{{ project.language }}</h2>
+                <span>{{ project.text }}</span>
+                <div class="project-links">
+                    <a href="{{ project.link }}" target="_blank"><button class="live-test-btn">Live test</button></a>
+                    <a href="{{ project.linkGit }}" target="_blank"><button class="github-btn">Github</button></a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</div>
