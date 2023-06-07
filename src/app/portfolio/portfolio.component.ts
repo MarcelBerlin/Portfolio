@@ -40,13 +40,12 @@ export class PortfolioComponent implements OnInit {
     },
     {
       name: 'Ring-of-fire',
-      img: 'pokedex-detail.png', 
+      img: 'ringoffire.png', 
       language: 'Angular | Firebase',
-      text: 'A simple Card created with Angular and Firebase.',
+      text: 'A simple Card game created with Angular and Firebase.',
       link: 'https://ringoffire.marcelberlin-developer.de/',
       linkGit: 'https://github.com/MarcelBerlin/Ring-of-Fire.git'
     },
-
   ];
 
 }
