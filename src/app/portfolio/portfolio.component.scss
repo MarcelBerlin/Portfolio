@@ -93,7 +93,7 @@
 
     h1 {
         color: #9747FF;
-        font-size: calc(33px + 0.390625vw);
+        font-size: 32px;
 
         @media(max-width: 1000px) {
             font-size: calc(20px + 0.390625vw);
@@ -102,7 +102,7 @@
 
     h2 {
         color: #70E61C;
-        font-size: calc(23px + 0.390625vw);
+        font-size: 23px;
 
         @media(max-width: 1000px) {
             font-size: calc(18px + 0.390625vw);
@@ -115,7 +115,7 @@
     }
 
     span {
-        font-size: calc(14px + 0.390625vw);
+        font-size: 16px;
 
         @media(max-width: 1000px) {
             font-size: calc(16px + 0.390625vw);
@@ -128,16 +128,50 @@
     }
 }
 
+.project-links {    
+    display: flex;
+    justify-content: center;
+    a {
+        text-decoration: none;
+    }
+}
 
 .live-test-btn {
-
+    
     font-size: calc(23px + 0.390625vw);
     background-color: #9747FF;
     box-shadow: 0 0 5px #9747FF;
     padding: 16px;
     margin: 32px;
     border-radius: 10px;
-    transition: all 225ms ease-in-out;
+    transition: all 125ms ease-in-out;
+    text-decoration: none;
+    border: none;
+    color: white;
+    align-items: center;
+    display: flex;
+
+
+    &:hover {
+        cursor: pointer;
+        background: #70E61C;
+        box-shadow: 0 0 5px #70E61C;        
+    }
+
+    @media(max-width: 1000px) {
+        font-size: calc(16px + 0.4vw);
+        padding: 8px;
+    }
+}
+
+.github-btn {
+    font-size: calc(23px + 0.390625vw);
+    background: none;    
+    box-shadow: 0 0 5px #70E61C;
+    padding: 16px;
+    margin: 32px;
+    border-radius: 10px;
+    transition: all 125ms ease-in-out;
     text-decoration: none;
     border: none;
     color: white;
@@ -149,7 +183,7 @@
         cursor: pointer;
         background: #70E61C;
         box-shadow: 0 0 5px #70E61C;
-        transform: scale(1.1, 1.1);
+       
     }
 
     @media(max-width: 1000px) {
