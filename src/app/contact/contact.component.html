@@ -8,7 +8,7 @@
     <div class="contact-details">
         <div class="contact-left">
 
-            <div class="contact-section-text">
+            <div class="contact-section-text" data-aos="zoom-in-up" >
                 <h2>Got a problem to solve?</h2>
                 <span>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing
                     to
@@ -26,7 +26,7 @@
                 <!-- NAME INPUT -->
 
                 <input id="name" [ngClass]="{ 'empty': isInputNameEmpty, 'filled': !isInputNameEmpty }"
-                    placeholder="Your name" #nameField [(ngModel)]="name" (ngModelChange)="handleNameInputChange()"
+                    placeholder="Your name" #nameField  data-aos="zoom-in-up" [(ngModel)]="name" (ngModelChange)="handleNameInputChange()"
                     name="inputField" (focus)="isInputNameEmpty = !name" (blur)="isInputNameEmpty = !name" />
 
                 <!-- ################################ -->
@@ -34,7 +34,7 @@
                 <!-- EMAIL INPUT -->
 
                 <input id="email" [ngClass]="{ 'empty': isInputEmailEmpty, 'filled': !isInputEmailEmpty }"
-                    placeholder="Your email" #emailField [(ngModel)]="email" (ngModelChange)="handleEmailInputChange()"
+                    placeholder="Your email" #emailField  data-aos="zoom-in-up" [(ngModel)]="email" (ngModelChange)="handleEmailInputChange()"
                     name="inputField" (focus)="isInputEmailEmpty = !email" (blur)="isInputEmailEmpty = !email" />
 
                 <!-- ################################ -->
@@ -70,5 +70,8 @@
         </div>
     </div>
 
+    <div class="purpleShadow">
+        <img src="/assets/img/contact-shadow.png">
+    </div>
 
 </div>
