@@ -1,11 +1,23 @@
 .contact-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
     background-color: #141D2F;
     color: white;
     display: flex;
     padding-top: 20vh;
     padding-bottom: 20vh;
+}
 
+.d-none {
+    display: none;
+}
+
+.contact-details {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .contact-left {
@@ -37,8 +49,6 @@
     border-bottom-right-radius: 4px;
 }
 
-
-
 .contact-section-text {
     padding-top: 2vh;
     margin-left: 150px;
@@ -63,9 +73,6 @@
     margin-right: 150px;
 
 }
-
-
-
 
 .formInput {
     display: flex;
@@ -96,38 +103,67 @@
             box-shadow: 0 0 5px #70E61C;
         }
 
-        &.filled {
+        &#name.filled {
             border: 1px solid #70E61C;
+            box-shadow: 0 0 5px #70E61C;
+            background-image: url('/assets/img/Icon/input-success.png'); // input success
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            
         }
 
+        &#email.filled {
+            border: 1px solid #70E61C;
+            box-shadow: 0 0 5px #70E61C;
+            background-image: url('/assets/img/Icon/input-success.png'); // input success
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            
+        }       
 
-        &:focus {           
-
-            &.filled {
+        &#name:focus {
+            &#name.filled {
                 border: 1px solid #70E61C;
-
+                box-shadow: 0 0 5px #70E61C;
             }
+
 
             &.empty {
                 border: 1px solid red;
                 box-shadow: 0 0 5px red;
                 background-image: url('/assets/img/Icon/input-error.png'); // Replace with the actual path to your image
                 background-repeat: no-repeat;
-                background-position: right center;    
+                background-position: right 10px center;
             }
-                      
 
             &::placeholder {
                 opacity: 0; // Hide the placeholder when the input is focused
             }
-
-                      
         }
 
-        
+
+        &#email:focus {
+
+            &#email.filled {
+                border: 1px solid #70E61C;
+                box-shadow: 0 0 5px #70E61C;
+            }
+
+            &#email.empty {
+                border: 1px solid red;
+                box-shadow: 0 0 5px red;
+                background-image: url('/assets/img/Icon/input-error.png'); // Replace with the actual path to your image
+                background-repeat: no-repeat;
+                background-position: right 10px center;
+               
+            }
+
+
+            &::placeholder {
+                opacity: 0; // Hide the placeholder when the input is focused
+            }
+        }
     }
-
-
 
     textarea {
         background-color: transparent;
@@ -151,8 +187,60 @@
             border: 1px solid #70E61C;
             box-shadow: 0 0 5px #70E61C;
         }
+
+        &#message.filled {
+            border: 1px solid #70E61C;
+            box-shadow: 0 0 5px #70E61C;
+            background-image: url('/assets/img/Icon/input-success.png'); // input success
+            background-repeat: no-repeat;
+            background-position: right 10px top 10px;
+            
+        }
+
+        &#message:focus {
+            &#message.filled {
+                border: 1px solid #70E61C;
+                box-shadow: 0 0 5px #70E61C;
+            }
+
+            &.empty {
+                border: 1px solid red;
+                box-shadow: 0 0 5px red;
+                background-image: url('/assets/img/Icon/input-error.png'); // Replace with the actual path to your image
+                background-repeat: no-repeat;
+                background-position: right 10px top 10px;
+            }
+
+            &::placeholder {
+                opacity: 0; // Hide the placeholder when the input is focused
+            }
+        }
     }
+}
 
 
+.sendMessageBtn {
+    background: #70E61C;
+    box-shadow: 0 0 5px #70E61C;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    transition: all 125ms ease-in-out;
+    box-sizing: border-box;
 
+    &:hover {
+        background-color: #9747FF;
+        box-shadow: 0 0 5px #9747FF;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+.loaderDNone {
+    display: none;
 }

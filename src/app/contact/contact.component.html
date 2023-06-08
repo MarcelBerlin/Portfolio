@@ -1,62 +1,74 @@
 <div class="contact-container" id="contact">
-    <div class="contact-left">
-        <div class="contact-title">
-            <div class="contact-horizontal-line"></div>
-            <h1 data-aos="fade-up">Contact</h1>
-        </div>
 
-        <div class="contact-section-text">
-            <h2>Got a problem to solve?</h2>
-            <span>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to
-                your projects with my work</span>
-            <br>
-            <br>
-            <span>Need a Frontend developer? <b>Contact me!</b></span>
-        </div>
+    <div class="contact-title">
+        <div class="contact-horizontal-line"></div>
+        <h1 data-aos="fade-up">Contact</h1>
     </div>
 
-    <div class="contact-right">
+    <div class="contact-details">
+        <div class="contact-left">
 
-        <form (submit)="sendMail()" method="POST" class="formInput" ngNativeValidate #myForm>
-
-            <!-- NAME INPUT -->
-            <input id="name" [ngClass]="{ 'empty': isInputEmpty, 'filled': !isInputEmpty }" placeholder="Your name"
-                [(ngModel)]="inputValue" (ngModelChange)="handleInputChange()" name="inputField"
-                (focus)="isInputEmpty = !inputValue" (blur)="isInputEmpty = !inputValue" />
-            <!--  -->
-
-            <!-- OLD -->
-            <!-- <input id="name" required type="text" placeholder="Your name" #nameField
-                data-aos="zoom-in-up"> -->
-            <!--  -->
-
-            <!-- EMAIL INPUT -->
-            <input id="mail" required type="email" placeholder="Your email" #emailField data-aos="zoom-in-up">
-            <!--  -->
-
-            <!-- TEXTAREA -->
-
-            <textarea class="input-container" id="message" required cols="30" rows="10" placeholder="Your message"
-                #messageField data-aos="zoom-in-up"></textarea>
-
-            <!--  -->
-            <div class="sendBtnAndEmailSend" data-aos="zoom-in-up">
-                <button id="sendBtn" class="sendMessageBtn" #sendButton translate>Send
-                    message :)
-                </button>
-                <div id="loader" class="loaderDNone">
-                    <div class="loader">
-                        <div class="line line1"></div>
-                        <div class="line line2"></div>
-                        <div class="line line3"></div>
-                        <div class="line line4"></div>
-                        <div class="line line5"></div>
-                    </div>
-                </div>
-
-                <div class="emailSend loaderDNone" id="sendEmail" translate>E-Mail has been sent.</div>
+            <div class="contact-section-text">
+                <h2>Got a problem to solve?</h2>
+                <span>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing
+                    to
+                    your projects with my work</span>
+                <br>
+                <br>
+                <span>Need a Frontend developer? <b>Contact me!</b></span>
             </div>
-        </form>
+        </div>
 
+        <div class="contact-right">
+
+            <form (submit)="sendMail()" method="POST" class="formInput" ngNativeValidate #myForm>
+
+                <!-- NAME INPUT -->
+
+                <input id="name" [ngClass]="{ 'empty': isInputNameEmpty, 'filled': !isInputNameEmpty }"
+                    placeholder="Your name" #nameField [(ngModel)]="name" (ngModelChange)="handleNameInputChange()"
+                    name="inputField" (focus)="isInputNameEmpty = !name" (blur)="isInputNameEmpty = !name" />
+
+                <!-- ################################ -->
+
+                <!-- EMAIL INPUT -->
+
+                <input id="email" [ngClass]="{ 'empty': isInputEmailEmpty, 'filled': !isInputEmailEmpty }"
+                    placeholder="Your email" #emailField [(ngModel)]="email" (ngModelChange)="handleEmailInputChange()"
+                    name="inputField" (focus)="isInputEmailEmpty = !email" (blur)="isInputEmailEmpty = !email" />
+
+                <!-- ################################ -->
+
+                <!-- TEXTAREA -->
+
+                <textarea id="message" required cols="30" rows="10"
+                    [ngClass]="{ 'empty': isInputMessageEmpty, 'filled': !isInputMessageEmpty }"
+                    placeholder="Your message" #messageField data-aos="zoom-in-up" [(ngModel)]="message"
+                    (ngModelChange)="handleMessageInputChange()" name="inputField"
+                    (focus)="isInputMessageEmpty = !message" (blur)="isInputMessageEmpty = !message"></textarea>
+
+                <!-- ################################ -->
+
+                <div class="sendBtnAndEmailSend" data-aos="zoom-in-up">
+                    <button id="sendBtn" class="sendMessageBtn" #sendButton translate>Send
+                        message :)
+                    </button>
+                    <div id="loader" class="loaderDNone">
+                        <div class="loader">
+                            <div class="line line1"></div>
+                            <div class="line line2"></div>
+                            <div class="line line3"></div>
+                            <div class="line line4"></div>
+                            <div class="line line5"></div>
+                        </div>
+                    </div>
+
+                    <div class="emailSend loaderDNone" id="sendEmail" translate>E-Mail has been sent.</div>
+                </div>
+            </form>
+
+        </div>
     </div>
+
+
 </div>

@@ -18,8 +18,9 @@ export class ContactComponent implements OnInit {
   email: string;
   message: string;  
   inputValue: string;
-  isInputEmpty: boolean = true; // Initialize as empty
-
+  isInputNameEmpty: boolean = true; // Initialize as empty
+  isInputEmailEmpty: boolean = true; // Initialize as empty
+  isInputMessageEmpty: boolean = true; // Initialize as empty
   constructor() {
 
   }
@@ -29,11 +30,27 @@ export class ContactComponent implements OnInit {
   }
 
 
-  handleInputChange() {
-    if (this.inputValue.length >= 1) {
-      this.isInputEmpty = false;
+  handleNameInputChange() {    
+    if (this.name.length >= 1) {
+      this.isInputNameEmpty = false;      
     } else {
-      this.isInputEmpty = true;
+      this.isInputNameEmpty = true;      
+    }
+  }
+
+  handleEmailInputChange() {   
+    if (this.email.length >= 1) {
+      this.isInputEmailEmpty = false;   
+    } else {
+      this.isInputEmailEmpty = true;
+    }
+  }
+
+  handleMessageInputChange() {   
+    if (this.message.length >= 1) {
+      this.isInputMessageEmpty = false;    
+    } else {
+      this.isInputMessageEmpty = true;    
     }
   }
 
