@@ -12,9 +12,13 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { StartComponent } from './start/start.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgIf } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +32,7 @@ import { StartComponent } from './start/start.component';
     PortfolioComponent,
     StartComponent,
     SkillsComponent,
-    
+      
   ],
   imports: [
     BrowserModule,
@@ -36,8 +40,12 @@ import { StartComponent } from './start/start.component';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
-
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,   
+    NgIf,
+    
+     
   ],
   providers: [],
   bootstrap: [AppComponent]

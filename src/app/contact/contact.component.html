@@ -1,4 +1,4 @@
-<div class="contact-container">
+<div class="contact-container" id="contact">
     <div class="contact-left">
         <div class="contact-title">
             <div class="contact-horizontal-line"></div>
@@ -16,6 +16,47 @@
     </div>
 
     <div class="contact-right">
-        
+
+        <form (submit)="sendMail()" method="POST" class="formInput" ngNativeValidate #myForm>
+
+            <!-- NAME INPUT -->
+            <input id="name" [ngClass]="{ 'empty': isInputEmpty, 'filled': !isInputEmpty }" placeholder="Your name"
+                [(ngModel)]="inputValue" (ngModelChange)="handleInputChange()" name="inputField"
+                (focus)="isInputEmpty = !inputValue" (blur)="isInputEmpty = !inputValue" />
+            <!--  -->
+
+            <!-- OLD -->
+            <!-- <input id="name" required type="text" placeholder="Your name" #nameField
+                data-aos="zoom-in-up"> -->
+            <!--  -->
+
+            <!-- EMAIL INPUT -->
+            <input id="mail" required type="email" placeholder="Your email" #emailField data-aos="zoom-in-up">
+            <!--  -->
+
+            <!-- TEXTAREA -->
+
+            <textarea class="input-container" id="message" required cols="30" rows="10" placeholder="Your message"
+                #messageField data-aos="zoom-in-up"></textarea>
+
+            <!--  -->
+            <div class="sendBtnAndEmailSend" data-aos="zoom-in-up">
+                <button id="sendBtn" class="sendMessageBtn" #sendButton translate>Send
+                    message :)
+                </button>
+                <div id="loader" class="loaderDNone">
+                    <div class="loader">
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                        <div class="line line3"></div>
+                        <div class="line line4"></div>
+                        <div class="line line5"></div>
+                    </div>
+                </div>
+
+                <div class="emailSend loaderDNone" id="sendEmail" translate>E-Mail has been sent.</div>
+            </div>
+        </form>
+
     </div>
 </div>
