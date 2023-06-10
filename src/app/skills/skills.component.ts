@@ -25,11 +25,11 @@ export class SkillsComponent implements OnInit {
     },
     {
       name: 'JavaScript',
-      img: 'JavaScript.png'
+      img: 'Javascript.png'
     },
     {
       name: 'HTML',
-      img: 'HTML.png'
+      img: 'html.png'
     },
     {
       name: 'Firebase',
@@ -37,7 +37,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       name: 'Github',
-      img: 'Git.png'
+      img: 'git.png'
     },
     {
       name: 'CSS',
@@ -49,7 +49,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       name: 'Scrum',
-      img: 'Scrum.png'
+      img: 'scrum.png'
     },
     {
       name: 'Material Design',

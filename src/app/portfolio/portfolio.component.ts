@@ -16,7 +16,7 @@ export class PortfolioComponent implements OnInit {
   projects: any = [
     {
       name: 'Join',
-      img: 'join.png', 
+      img: 'JOIN.png', 
       language: 'JavaScript | HTML | CSS | Git',
       text: 'A group created Kanban-Board',
       link: 'https://join.marcelberlin-developer.de/',

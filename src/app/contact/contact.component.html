@@ -27,7 +27,7 @@
 
                 <input id="name" [ngClass]="{ 'empty': isInputNameEmpty, 'filled': !isInputNameEmpty }"
                     placeholder="Your name" #nameField  data-aos="zoom-in-up" [(ngModel)]="name" (ngModelChange)="handleNameInputChange()"
-                    name="inputField" (focus)="isInputNameEmpty = !name" (blur)="isInputNameEmpty = !name" />
+                     (focus)="isInputNameEmpty = !name" (blur)="isInputNameEmpty = !name" [ngModelOptions]="{standalone: true}" />
 
                 <!-- ################################ -->
 
@@ -35,7 +35,7 @@
 
                 <input id="email" [ngClass]="{ 'empty': isInputEmailEmpty, 'filled': !isInputEmailEmpty }"
                     placeholder="Your email" #emailField  data-aos="zoom-in-up" [(ngModel)]="email" (ngModelChange)="handleEmailInputChange()"
-                    name="inputField" (focus)="isInputEmailEmpty = !email" (blur)="isInputEmailEmpty = !email" />
+                     (focus)="isInputEmailEmpty = !email" (blur)="isInputEmailEmpty = !email" [ngModelOptions]="{standalone: true}" />
 
                 <!-- ################################ -->
 
@@ -44,8 +44,8 @@
                 <textarea id="message" required cols="30" rows="10"
                     [ngClass]="{ 'empty': isInputMessageEmpty, 'filled': !isInputMessageEmpty }"
                     placeholder="Your message" #messageField data-aos="zoom-in-up" [(ngModel)]="message"
-                    (ngModelChange)="handleMessageInputChange()" name="inputField"
-                    (focus)="isInputMessageEmpty = !message" (blur)="isInputMessageEmpty = !message"></textarea>
+                    (ngModelChange)="handleMessageInputChange()" 
+                    (focus)="isInputMessageEmpty = !message" (blur)="isInputMessageEmpty = !message" [ngModelOptions]="{standalone: true}"></textarea>
 
                 <!-- ################################ -->
 
