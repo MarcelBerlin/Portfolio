@@ -9,7 +9,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 
 })
 export class ContactComponent {
-  @ViewChild('myForm') myFrom!: ElementRef;
+  @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('emailField') emailField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;
@@ -73,6 +73,7 @@ export class ContactComponent {
     let messageField = this.messageField.nativeElement;
     this.mailSendToServer(nameField, emailField, messageField);
     this.BtnDisable();
+    console.log('sending email', this.myForm);
   }
 
   async mailSendToServer(nameField: HTMLInputElement, emailField: HTMLInputElement, messageField: HTMLInputElement) {

@@ -8,7 +8,7 @@
     <div class="contact-details">
         <div class="contact-left">
 
-            <div class="contact-section-text" data-aos="zoom-in-up" >
+            <div class="contact-section-text" data-aos="zoom-in-up">
                 <h2>Got a problem to solve?</h2>
                 <span>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing
                     to
@@ -25,32 +25,33 @@
 
                 <!-- NAME INPUT -->
 
-                <input id="name" required type="text" [ngClass]="{ 'empty': isInputNameEmpty, 'filled': !isInputNameEmpty }"
-                    placeholder="Your name" #nameField  data-aos="zoom-in-up" [(ngModel)]="name" (ngModelChange)="handleNameInputChange()"
-                     (focus)="isInputNameEmpty = !name" (blur)="isInputNameEmpty = !name" [ngModelOptions]="{standalone: true}" />
+                <input id="name" required type="text"
+                    [ngClass]="{ 'empty': isInputNameEmpty, 'filled': !isInputNameEmpty }" placeholder="Your name"
+                    #nameField data-aos="zoom-in-up" [(ngModel)]="name" (ngModelChange)="handleNameInputChange()"
+                    (focus)="isInputNameEmpty = !name" (blur)="isInputNameEmpty = !name"
+                    [ngModelOptions]="{standalone: true}" />
 
                 <!-- ################################ -->
 
                 <!-- EMAIL INPUT -->
 
-                <input id="email" required type="email" 
-                [ngClass]="{ 'empty': isInputEmailEmpty, 'filled': !isInputEmailEmpty, 'valid': isEmailValid  }"
-                    placeholder="Your email" #emailField  data-aos="zoom-in-up" [(ngModel)]="email" 
-                    (ngModelChange)="handleEmailInputChange()"
-                    (focus)="isInputEmailEmpty = !email" (blur)="isInputEmailEmpty = !email; validateEmail()" 
-                    [ngModelOptions]="{standalone: true}" 
+                <input id="email" required type="email"
+                    [ngClass]="{ 'empty': isInputEmailEmpty, 'filled': !isInputEmailEmpty, 'valid': isEmailValid  }"
+                    placeholder="Your email" #emailField data-aos="zoom-in-up" [(ngModel)]="email"
+                    (ngModelChange)="handleEmailInputChange()" (focus)="isInputEmailEmpty = !email"
+                    (blur)="isInputEmailEmpty = !email; validateEmail()" [ngModelOptions]="{standalone: true}"
                     pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                    title="Please enter a valid email address"  />
+                    title="Please enter a valid email address" />
 
                 <!-- ################################ -->
 
                 <!-- TEXTAREA -->
 
-                <textarea id="message" required cols="30" rows="10"
+                <textarea id="message" required cols="30" rows="10" method="POST"
                     [ngClass]="{ 'empty': isInputMessageEmpty, 'filled': !isInputMessageEmpty }"
                     placeholder="Your message" #messageField data-aos="zoom-in-up" [(ngModel)]="message"
-                    (ngModelChange)="handleMessageInputChange()" 
-                    (focus)="isInputMessageEmpty = !message" (blur)="isInputMessageEmpty = !message" [ngModelOptions]="{standalone: true}"></textarea>
+                    (ngModelChange)="handleMessageInputChange()" (focus)="isInputMessageEmpty = !message"
+                    (blur)="isInputMessageEmpty = !message" [ngModelOptions]="{standalone: true}"></textarea>
 
                 <!-- ################################ -->
 
