@@ -25,7 +25,7 @@
 
                 <!-- NAME INPUT -->
 
-                <input id="name" [ngClass]="{ 'empty': isInputNameEmpty, 'filled': !isInputNameEmpty }"
+                <input id="name" required type="text" [ngClass]="{ 'empty': isInputNameEmpty, 'filled': !isInputNameEmpty }"
                     placeholder="Your name" #nameField  data-aos="zoom-in-up" [(ngModel)]="name" (ngModelChange)="handleNameInputChange()"
                      (focus)="isInputNameEmpty = !name" (blur)="isInputNameEmpty = !name" [ngModelOptions]="{standalone: true}" />
 
@@ -33,7 +33,8 @@
 
                 <!-- EMAIL INPUT -->
 
-                <input id="email" [ngClass]="{ 'empty': isInputEmailEmpty, 'filled': !isInputEmailEmpty }"
+                <input id="email" required type="email" 
+                [ngClass]="{ 'empty': isInputEmailEmpty, 'filled': !isInputEmailEmpty }"
                     placeholder="Your email" #emailField  data-aos="zoom-in-up" [(ngModel)]="email" (ngModelChange)="handleEmailInputChange()"
                      (focus)="isInputEmailEmpty = !email" (blur)="isInputEmailEmpty = !email" [ngModelOptions]="{standalone: true}" />
 

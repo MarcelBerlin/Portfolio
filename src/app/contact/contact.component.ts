@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -25,7 +26,7 @@ export class ContactComponent implements OnInit {
 
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
     
   }
 
