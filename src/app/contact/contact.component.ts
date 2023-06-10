@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 
 
@@ -8,7 +8,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./contact.component.scss'],
 
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
   @ViewChild('myForm') myFrom!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('emailField') emailField!: ElementRef;
@@ -19,17 +19,19 @@ export class ContactComponent implements OnInit {
   email: string;
   message: string;  
   inputValue: string;
+  isEmailValid: boolean = false;
   isInputNameEmpty: boolean = true; // Initialize as empty
   isInputEmailEmpty: boolean = true; // Initialize as empty
   isInputMessageEmpty: boolean = true; // Initialize as empty
   constructor() {
 
   }
+  
 
-  ngOnInit() {
-    
+  validateEmail() {
+    const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
+    this.isEmailValid = emailRegex.test(this.email);
   }
-
 
   handleNameInputChange() {    
     if (this.name.length >= 1) {

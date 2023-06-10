@@ -34,9 +34,13 @@
                 <!-- EMAIL INPUT -->
 
                 <input id="email" required type="email" 
-                [ngClass]="{ 'empty': isInputEmailEmpty, 'filled': !isInputEmailEmpty }"
-                    placeholder="Your email" #emailField  data-aos="zoom-in-up" [(ngModel)]="email" (ngModelChange)="handleEmailInputChange()"
-                     (focus)="isInputEmailEmpty = !email" (blur)="isInputEmailEmpty = !email" [ngModelOptions]="{standalone: true}" />
+                [ngClass]="{ 'empty': isInputEmailEmpty, 'filled': !isInputEmailEmpty, 'valid': isEmailValid  }"
+                    placeholder="Your email" #emailField  data-aos="zoom-in-up" [(ngModel)]="email" 
+                    (ngModelChange)="handleEmailInputChange()"
+                    (focus)="isInputEmailEmpty = !email" (blur)="isInputEmailEmpty = !email; validateEmail()" 
+                    [ngModelOptions]="{standalone: true}" 
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                    title="Please enter a valid email address"  />
 
                 <!-- ################################ -->
 

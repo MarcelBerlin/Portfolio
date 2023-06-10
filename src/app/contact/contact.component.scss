@@ -109,24 +109,25 @@
             background-image: url('/assets/img/Icon/input-success.png'); // input success
             background-repeat: no-repeat;
             background-position: right 10px center;
-            
         }
 
-        &#email.filled {
+        &#email.valid {
             border: 1px solid #70E61C;
             box-shadow: 0 0 5px #70E61C;
             background-image: url('/assets/img/Icon/input-success.png'); // input success
             background-repeat: no-repeat;
             background-position: right 10px center;
-            
-        }       
+
+        }
 
         &#name:focus {
             &#name.filled {
                 border: 1px solid #70E61C;
                 box-shadow: 0 0 5px #70E61C;
+                background-image: url('/assets/img/Icon/input-success.png'); // input success
+                background-repeat: no-repeat;
+                background-position: right 10px center;
             }
-
 
             &.empty {
                 border: 1px solid red;
@@ -143,19 +144,20 @@
 
 
         &#email:focus {
-
-            &#email.filled {
+            &#email.valid {
                 border: 1px solid #70E61C;
                 box-shadow: 0 0 5px #70E61C;
+                background-image: url('/assets/img/Icon/input-success.png'); // input success
+                background-repeat: no-repeat;
+                background-position: right 10px center;
             }
 
-            &#email.empty {
+            &.empty {
                 border: 1px solid red;
                 box-shadow: 0 0 5px red;
                 background-image: url('/assets/img/Icon/input-error.png'); // Replace with the actual path to your image
                 background-repeat: no-repeat;
                 background-position: right 10px center;
-               
             }
 
 
@@ -194,7 +196,7 @@
             background-image: url('/assets/img/Icon/input-success.png'); // input success
             background-repeat: no-repeat;
             background-position: right 10px top 10px;
-            
+
         }
 
         &#message:focus {
@@ -246,15 +248,15 @@
 }
 
 .purpleShadow {
-    position: absolute;    
+    position: absolute;
     left: 0;
-    top: 45%;    
-  
+    top: 45%;
+
     img {
-            
-      height: 80vh;     
-        
-    }   
+
+        height: 80vh;
+
+    }
 
     @media(max-width: 800px) {
         img {
