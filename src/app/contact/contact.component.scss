@@ -4,7 +4,7 @@
     flex-direction: column;
     background-color: #141D2F;
     color: white;
-    display: flex;
+    display: flex;    
     padding-top: 20vh;
     padding-bottom: 20vh;
 }
@@ -71,6 +71,30 @@
     display: flex;
     flex-direction: column;
     margin-right: 150px;
+    position: relative;
+
+    &.goUp {
+        position: absolute;
+        right: 15px;
+        bottom: 50px;
+        width: 39px;
+        height: 39px;
+        border-radius: 41px;
+    }
+    
+    &.goUpImg {
+        position: absolute;
+        right: 15px;
+        bottom: 50px;
+        transition: all 125ms ease-in-out;
+        border-radius: 41px;
+    
+        &:hover {
+            background-color: #00BEE8;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
 
 }
 
@@ -85,7 +109,7 @@
         border: 1px solid #9747FF;
         box-shadow: 0 0 5px #9747FF;
         border-radius: 10px;
-        width: 500px;
+        width: 630px;
         height: 30px;
         padding: 15px 25px;
         margin-bottom: 30px;
@@ -173,7 +197,7 @@
         border: 1px solid #9747FF;
         box-shadow: 0 0 5px #9747FF;
         border-radius: 10px;
-        width: 500px;
+        width: 630px;
         height: 200px;
         padding: 15px 25px;
         margin-bottom: 30px;
@@ -243,18 +267,20 @@
     }
 }
 
+
 .loaderDNone {
     display: none;
 }
 
 .purpleShadow {
     position: absolute;
+    z-index: 2;
     left: 0;
-    top: 45%;
+    top: 750px;
 
     img {
 
-        height: 80vh;
+        height: 65vh;
 
     }
 

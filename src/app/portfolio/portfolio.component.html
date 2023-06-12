@@ -1,13 +1,15 @@
-<div class="portfolio-container" id="portfolio">   
+<div class="portfolio-container" id="portfolio">
 
-    <div class="portfolio-section-title">        
-            <div class="portfolio-horizontal-small"></div>               
-            <div class="portfolio-horizontal-big"></div>    
-        <div class="portfolio-title" data-aos="fade-up">
-            <h1>Portfolio</h1>
-            <span>The following applications are a small sample of my work - please feel free to try them out.</span>
+    <div class="portfolio-section-title">
+        <div class="portfolio-title-position">
+            <div class="portfolio-title">
+                <div class="portfolio-horizontal-small"></div>
+                <h1 data-aos="fade-up">Portfolio</h1>                
+                <div class="portfolio-horizontal-big"></div>
+            </div>
+            <span data-aos="fade-up">The following applications are a small sample of my work - please feel free to try them
+                out.</span>
         </div>
-        
     </div>
 
     <div class="portfolio-projects zIndex" *ngFor="let project of projects; let i = index">
@@ -27,9 +29,6 @@
                     <a href="{{ project.linkGit }}" target="_blank"><button class="github-btn">Github</button></a>
                 </div>
             </div>
-
-
-
         </div>
 
         <div *ngIf="i % 2 != 0" class="portfolio-project2 column-reverse" data-aos="fade-left">

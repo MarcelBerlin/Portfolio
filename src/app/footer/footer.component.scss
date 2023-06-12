@@ -8,35 +8,39 @@
     border-top: 4px solid #70E61C;
     height: 150px;
     padding-top: 5vh;
-    padding-bottom: 5vh;    
+    padding-bottom: 5vh;     
 }
 
 .footerLogo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    
 
     a {
-        margin-top: 10px;
-        color: white;
+        margin-top: 10px;        
         text-decoration: none;
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 120%;
+        font-size: 12px;
+        line-height: 120%;      
+        color: white;
         transition: all 125ms ease-in-out;
-        text-decoration: underline 2px transparent;
+       
 
         &:hover {
             text-decoration: underline 2px #70E61C;
+            transition: all 125ms ease-in-out;
         }
     }
-
+    
     img {
         height: 60px;
     }
 }
+
+
 
 .footer {
     margin-top: 20px;
@@ -84,7 +88,7 @@
     .footerIcon {
        img {
         object-fit: contain;
-        height: 60px;
+        height: 40px;
        } 
     }
 
@@ -93,12 +97,16 @@
     }
 
     .footerLogo {
+
+        display: flex;
+        justify-content: flex-start;
         img {
             height: 100px;
         }
 
         a {
-            font-size: 35px;
+            font-size: 24px;
+            transition: all 125ms ease-in-out;
         }
     }
 }
