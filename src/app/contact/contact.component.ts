@@ -14,46 +14,46 @@ export class ContactComponent {
   @ViewChild('emailField') emailField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
-  
+
   name: string;
   email: string;
-  message: string;  
+  message: string;
   inputValue: string;
   isEmailValid: boolean = false;
   isInputNameEmpty: boolean = true; // Initialize as empty
   isInputEmailEmpty: boolean = true; // Initialize as empty
   isInputMessageEmpty: boolean = true; // Initialize as empty
+
   constructor() {
 
   }
-  
 
   validateEmail() {
     const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
     this.isEmailValid = emailRegex.test(this.email);
   }
 
-  handleNameInputChange() {    
+  handleNameInputChange() {
     if (this.name.length >= 1) {
-      this.isInputNameEmpty = false;      
+      this.isInputNameEmpty = false;
     } else {
-      this.isInputNameEmpty = true;      
+      this.isInputNameEmpty = true;
     }
   }
 
-  handleEmailInputChange() {   
+  handleEmailInputChange() {
     if (this.email.length >= 1) {
-      this.isInputEmailEmpty = false;   
+      this.isInputEmailEmpty = false;
     } else {
       this.isInputEmailEmpty = true;
     }
   }
 
-  handleMessageInputChange() {   
+  handleMessageInputChange() {
     if (this.message.length >= 1) {
-      this.isInputMessageEmpty = false;    
+      this.isInputMessageEmpty = false;
     } else {
-      this.isInputMessageEmpty = true;    
+      this.isInputMessageEmpty = true;
     }
   }
 
@@ -81,7 +81,7 @@ export class ContactComponent {
     fd.append('nameField', nameField.value)
     fd.append('emailField', emailField.value)
     fd.append('messageField', messageField.value)
-    await fetch('https://www.marcelberlin-developer.de/send_mail.php',
+    await fetch('https://www.marcelberlin-developer.de/send_mail/send_mail.php',
       {
         method: 'POST',
         body: fd

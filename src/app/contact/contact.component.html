@@ -8,7 +8,7 @@
     <div class="contact-details">
         <div class="contact-left">
 
-            <div class="contact-section-text" data-aos="zoom-in-up">
+            <div class="contact-section-text" data-aos="fade-right">
                 <h2>Got a problem to solve?</h2>
                 <span>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing
                     to
@@ -25,19 +25,20 @@
 
                 <!-- NAME INPUT -->
 
-                <input id="name" required type="text"
+                <input id="name" required type="text" data-aos="fade-left"
                     [ngClass]="{ 'empty': isInputNameEmpty, 'filled': !isInputNameEmpty }" placeholder="Your name"
-                    #nameField data-aos="zoom-in-up" [(ngModel)]="name" (ngModelChange)="handleNameInputChange()"
+                    #nameField [(ngModel)]="name" (ngModelChange)="handleNameInputChange()"
                     (focus)="isInputNameEmpty = !name" (blur)="isInputNameEmpty = !name"
-                    [ngModelOptions]="{standalone: true}" />
+                    [ngModelOptions]="{standalone: true}"
+                    title="Please enter your name" /> 
 
                 <!-- ################################ -->
 
                 <!-- EMAIL INPUT -->
 
-                <input id="email" required type="email"
+                <input id="email" required type="email" data-aos="fade-left"
                     [ngClass]="{ 'empty': isInputEmailEmpty, 'filled': !isInputEmailEmpty, 'valid': isEmailValid  }"
-                    placeholder="Your email" #emailField data-aos="zoom-in-up" [(ngModel)]="email"
+                    placeholder="Your email" #emailField [(ngModel)]="email"
                     (ngModelChange)="handleEmailInputChange()" (focus)="isInputEmailEmpty = !email"
                     (blur)="isInputEmailEmpty = !email; validateEmail()" [ngModelOptions]="{standalone: true}"
                     pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
@@ -47,15 +48,15 @@
 
                 <!-- TEXTAREA -->
 
-                <textarea id="message" required cols="30" rows="10" method="POST"
+                <textarea id="message" required cols="30" rows="10" method="POST" data-aos="fade-left"
                     [ngClass]="{ 'empty': isInputMessageEmpty, 'filled': !isInputMessageEmpty }"
-                    placeholder="Your message" #messageField data-aos="zoom-in-up" [(ngModel)]="message"
+                    placeholder="Your message" #messageField [(ngModel)]="message"
                     (ngModelChange)="handleMessageInputChange()" (focus)="isInputMessageEmpty = !message"
-                    (blur)="isInputMessageEmpty = !message" [ngModelOptions]="{standalone: true}"></textarea>
+                    (blur)="isInputMessageEmpty = !message" [ngModelOptions]="{standalone: true}" title="Please enter your message"></textarea>
 
                 <!-- ################################ -->
 
-                <div class="sendBtnAndEmailSend" data-aos="zoom-in-up">
+                <div class="sendBtnAndEmailSend" data-aos="fade-left">
                     <button id="sendBtn" class="sendMessageBtn" #sendButton translate>Send
                         message :)
                     </button>
