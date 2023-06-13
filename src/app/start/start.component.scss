@@ -326,32 +326,19 @@
   }
 }
 
-.purple-shadow {
-  display: flex;
-  justify-content: flex-end;
-  
-
-  img {
-    
-    z-index: 2;
-    width: 25vw;
-    height: 120vh;
-    filter: blur(20.5px);
-
-    @media (max-width: 1000px) {
-      height: 80vh;
-    }
-  }
-}
-
 .scroll-down-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: 50vh;
-  padding-right: 14vh;
+  height: 40vh;
+  padding-right: 12vh;
   position: relative;
+ 
+
+  @media (min-width: 2000px) {
+    height: 35vh;
+  }
 
   @media (max-width: 1000px) {
     display: none;
@@ -373,7 +360,7 @@
     margin-top: 50px;
     object-fit: contain;
     animation: scrollDown 2s linear infinite;
-    z-index: 4;
+    z-index: 5;
   }
 
   
