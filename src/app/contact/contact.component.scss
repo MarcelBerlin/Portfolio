@@ -308,6 +308,84 @@
     display: none;
 }
 
+.sendBtnAndEmailSend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailSend {
+    margin-top: 10px;
+    color: white;
+}
+
+.emailSendDiv {
+    margin-top: 20px;
+
+    span {
+        color: white;
+        font-size: 20px;
+    }
+}
+
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    margin-top: 20px;
+}
+
+.line {
+    height: 100%;
+    width: 4px;
+    margin-right: 2px;
+    animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.line1 {
+    animation-delay: -0.16s;
+    background-color: #9747FF;
+}
+
+.line2 {
+    animation-delay: -0.32s;
+    background-color: #70E61C;
+}
+
+.line3 {
+    animation-delay: -0.48s;
+    background-color: #9747FF;
+}
+
+.line4 {
+    animation-delay: -0.64s;
+    background-color: #70E61C;
+}
+
+.line5 {
+    animation-delay: -0.8s;
+    background-color: #9747FF;
+}
+
+@keyframes loader {
+    0% {
+        transform: scaleY(0.1);
+    }
+
+    50% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(0.1);
+    }
+}
+
+
 .purpleShadow {
     position: absolute;
     z-index: 2;
