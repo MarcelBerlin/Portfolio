@@ -11,7 +11,7 @@
 .profile {
   display: flex;
   justify-content: space-between;
-  height: 45%;
+  height: 50%;
   padding-top: 2vh;
 
   @media (max-width: 1000px) {
@@ -30,9 +30,12 @@
 }
 
 .profile-img {
-  padding: 14vh 0vh 0vh 15vh;
+  padding: 14vh 0vh 0vh 20vh;
   position: absolute;
-  height: 75vh;
+  top: -140px;
+  left: 50px;
+  height: 80vh;
+  width: auto;
   object-fit: contain;
 
   @media (max-width: 1260px) {
@@ -54,8 +57,10 @@
 
 .shadow {
   position: absolute;
+  top: 60px;
+  left: 50px;
   width: 50vw;
-  height: 80vh;
+  height: auto;
   object-fit: contain;
 
   @media (max-width: 1000px) {
@@ -87,7 +92,7 @@
 
 .introduction {
   margin-top: 250px;
-  margin-right: 280px;
+  margin-right: 150px;
   color: white;
   display: flex;
   align-items: center;
