@@ -9,13 +9,12 @@
 
     @media(max-width: 1000px) {
         flex-direction: column;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     @media(max-width: 590px) {
-        padding-left: 0;
-        padding-right: 0;
+        
     }
 }
 
@@ -55,6 +54,10 @@
         border-radius: 0px;
 
     }
+
+    @media (max-width: 1000px) {
+        
+    }
 }
 
 .about-me-picture {
@@ -70,6 +73,10 @@
         width: 20vw;        
         object-fit: cover;
     }    
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
     
 }
 
