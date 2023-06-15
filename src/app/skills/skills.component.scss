@@ -19,6 +19,7 @@
 
   @media (max-width: 1000px) {
     padding-left: 50;
+    padding-bottom: -5vh;
   }
 }
 
@@ -36,6 +37,10 @@
   @media (max-width: 1000px) {
     padding-left: 0;
     padding-bottom: 20vh;
+  }
+
+  @media (max-width: 700px) {
+    margin-left: -3vw;
   }
 }
 
@@ -58,6 +63,11 @@
       cursor: pointer;
       animation: bounce 425ms ease-in-out;
     }
+  }
+
+  @media (max-width: 700px) {
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -117,6 +127,12 @@
     }
   }
 
+  @media (max-width: 700px) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
   .purple-line {
     position: absolute;
     border-bottom: 4px solid #9747ff;
@@ -131,9 +147,9 @@
       top: -15px;
       width: 5vw;
     }
-   
+
     @media (max-width: 1024px) {
-      top: -18px;      
+      top: -18px;
     }
   }
 
@@ -153,9 +169,6 @@
 
     @media (max-width: 1150px) {
       display: none;
-      // margin-top: 8px;
-      // top: 1100px;
-      // right: 25vw;
     }
 
     a {
@@ -207,6 +220,14 @@
       font-size: calc(16px + 0.390625vw);
       margin: 8px;
     }
+
+    @media (max-width: 700px) {
+      
+        font-size: 14px;
+        text-align: right;
+        margin-right: 0;
+      
+    }
   }
 }
 
@@ -230,6 +251,13 @@
   @media (max-width: 800px) {
     img {
       height: 100vh;
+    }
+  }
+
+  @media (max-width: 700px) {
+    top: 1950px;
+    img {
+      height: 80vh;
     }
   }
 
