@@ -38,7 +38,7 @@
     }
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     margin-left: 100px;
   }
 
@@ -123,6 +123,10 @@
   @media (max-width: 1440px) {
    min-width: 10vw; 
   }
+
+  @media (max-width: 1200px) {
+    min-width: 5vw; 
+   }
 }
 
 .purple-shadow {
@@ -130,17 +134,16 @@
   z-index: 4;
   right: 0;
   top: 80vh;
-  
+  overflow: hidden;
 
   img {
     z-index: 2;
     width: 25vw;
-    height: 120vh;
-    overflow: hidden;
+    height: 120vh;    
     filter: blur(20.5px);
 
     @media (max-width: 1000px) {
-      height: 70vh;
+      height: 80vh;
       width: 35vw;     
       
     }

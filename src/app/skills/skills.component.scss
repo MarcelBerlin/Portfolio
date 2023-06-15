@@ -10,10 +10,16 @@
     @media (max-width: 1440px) {
         padding-top: 5vh;
     }
+
+    @media (max-width: 1150px) {
+        padding-top: 15vh;
+        flex-direction: column-reverse;
+        padding-left: 70px;
+    }   
     
     @media (max-width: 1000px) {
-        padding-left: 120px;      
-        flex-direction: column-reverse;
+        padding-left: 50;      
+        
     }
 }
 
@@ -43,9 +49,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
-    
-    margin-right: 25px;
+    color: white;    
     width: 200px;
     height: 200px;
 
@@ -106,6 +110,18 @@
         }
     }
 
+    @media (max-width: 1370px) {
+        h1 {
+            font-size: 65px;
+            line-height: 60px;
+        }
+    }
+
+    @media (max-width: 1150px) {
+        text-align: center;
+        padding-bottom: 5vh;
+    }
+
     @media (max-width: 1000px) {      
         
         h1 {
@@ -129,6 +145,11 @@
             width: 5vw;
         }
 
+        @media (max-width: 1150px) {
+            width: 30vw;
+            right: 35px;
+        }
+
         @media (max-width: 1024px) {
             top: -18px;
             width: 5vw;
@@ -145,11 +166,17 @@
         @media (max-width: 1440px) {
             top: 125px;           
         }
-    
-        @media(max-width: 1000px) {
-            margin-top: 8px;
-            top: 1100px;
-            right: 25%;           
+
+        @media (max-width: 1275px) {
+            top: 200px;
+        }
+        
+         
+        @media(max-width: 1150px) {
+            display: none;
+            // margin-top: 8px;
+            // top: 1100px;
+            // right: 25vw;           
         }
     
         a {      
@@ -176,6 +203,10 @@
                 font-size: calc(16px + 0.4vw);
             }
     
+            @media (max-width: 1224px) {
+                font-size: calc(13px + 0.4vw);
+            }
+
             @media(max-width: 1000px) {
                 font-size: calc(16px + 0.4vw);
                 padding: 8px;
@@ -194,13 +225,12 @@
     margin-right: 150px;    
   
     .skills-subheadline {
-        // width: 30vw;
+        
         font-size: 16px;
         line-height: 23px;   
             
         @media(max-width: 1000px) {
-            font-size: calc(16px + 0.390625vw);
-            // margin-right: 120px;
+            font-size: calc(16px + 0.390625vw);            
             margin: 8px;
         }
     }
