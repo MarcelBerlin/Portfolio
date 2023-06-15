@@ -8,7 +8,7 @@
     padding-top: 20vh;
     
     @media (max-width: 1000px) {
-              
+        padding-left: 120px;      
         flex-direction: column-reverse;
     }
 }
@@ -24,6 +24,7 @@
     
     @media(max-width: 1000px) {
         padding-left: 0;
+
         padding-bottom: 20vh;
     
     }
@@ -105,6 +106,11 @@
         right: 0;
         margin-left: 25px;
         margin-top: -50px;
+
+        @media (max-width: 1000px) {
+            top: -18px;
+            width: 10vw;
+        }
     }
 
     .contact-btn {
@@ -165,6 +171,7 @@
             
         @media(max-width: 1000px) {
             font-size: calc(16px + 0.390625vw);
+            // margin-right: 120px;
             margin: 8px;
         }
     }

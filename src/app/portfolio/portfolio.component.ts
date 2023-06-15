@@ -39,12 +39,12 @@ export class PortfolioComponent implements OnInit {
       linkGit: 'https://github.com/MarcelBerlin/Pokedex.git'
     },
     {
-      name: 'Ring-of-fire',
-      img: 'ringoffire.png', 
-      language: 'Angular | Firebase',
-      text: 'A simple Card game created with Angular and Firebase.',
-      link: 'https://ringoffire.marcelberlin-developer.de/',
-      linkGit: 'https://github.com/MarcelBerlin/Ring-of-Fire.git'
+      name: 'Portfolio',
+      img: 'portfolio.png', 
+      language: 'Angular | TypeScript | HTML | CSS',
+      text: 'Interactive portfolio demonstrating my Frontend development skills and creativity',
+      link: 'https://marcelberlin-developer.de/',
+      linkGit: 'https://github.com/MarcelBerlin/Portfolio.git'
     },
   ];
 

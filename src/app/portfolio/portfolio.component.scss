@@ -114,6 +114,11 @@
   }
 }
 
+.project-img {
+  // width: 150px;
+  // height: auto;
+}
+
 .project-description-1 {
   width: 50%;
   text-align: center;
@@ -291,6 +296,7 @@
 .portfolio-purple-shadow {
   position: absolute;
   top: 3800px;
+  overflow: hidden;
 
   img {
     z-index: 2;
@@ -314,6 +320,7 @@
   position: absolute;
   right: 0;
   top: 4700px;
+  overflow: hidden;
 
   img {
     z-index: 2;
@@ -330,3 +337,7 @@
     top: 5200px;
   }
 }
+
+
+  
+

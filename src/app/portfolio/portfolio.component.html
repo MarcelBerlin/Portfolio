@@ -16,11 +16,11 @@
 
         <div *ngIf="i % 2 == 0" class="portfolio-project1">
 
-            <div *ngIf="i % 2 == 0" class="project-img-1" data-aos="fade-right">
+            <div *ngIf="i % 2 == 0" class="project-img" data-aos="zoom-in-up">
                 <img src="/assets/img/{{ project.img }}">
             </div>
 
-            <div class="project-description-1" data-aos="fade-left">
+            <div class="project-description-1" data-aos="zoom-in-up">
                 <h1>{{ project.name }}</h1>
                 <h2>{{ project.language }}</h2>
                 <span>{{ project.text }}</span>
@@ -31,9 +31,9 @@
             </div>
         </div>
 
-        <div *ngIf="i % 2 != 0" class="portfolio-project2" data-aos="fade-left">
+        <div *ngIf="i % 2 != 0" class="portfolio-project2" data-aos="zoom-in-up">
 
-            <div class="project-description-2" data-aos="fade-right">
+            <div class="project-description-2" data-aos="zoom-in-up">
                 <h1>{{ project.name }}</h1>
                 <h2>{{ project.language }}</h2>
                 <span>{{ project.text }}</span>
@@ -43,7 +43,7 @@
                 </div>
             </div>
 
-            <div *ngIf="i % 2 != 0" class="project-img-2" data-aos="fade-left">
+            <div *ngIf="i % 2 != 0" class="project-img" data-aos="zoom-in-up">
                 <img src="/assets/img/{{ project.img }}">
             </div>
 

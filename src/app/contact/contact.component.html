@@ -9,7 +9,7 @@
     <div class="contact-details">
         <div class="contact-left">
 
-            <div class="contact-section-text" data-aos="fade-right">
+            <div class="contact-section-text" data-aos="zoom-in-up">
                 <h2>Got a problem to solve?</h2>
                 <span>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing
                     to
@@ -26,7 +26,7 @@
 
                 <!-- NAME INPUT -->
 
-                <input id="name" required type="text" data-aos="fade-left"
+                <input id="name" required type="text" data-aos="zoom-in-up"
                     [ngClass]="{ 'empty': isInputNameEmpty, 'filled': !isInputNameEmpty }" placeholder="Your name"
                     #nameField [(ngModel)]="name" (ngModelChange)="handleNameInputChange()"
                     (focus)="isInputNameEmpty = !name" (blur)="isInputNameEmpty = !name"
@@ -36,7 +36,7 @@
 
                 <!-- EMAIL INPUT -->
 
-                <input id="email" required type="email" data-aos="fade-left"
+                <input id="email" required type="email" data-aos="zoom-in-up"
                     [ngClass]="{ 'empty': isInputEmailEmpty, 'filled': !isInputEmailEmpty, 'valid': isEmailValid  }"
                     placeholder="Your email" #emailField [(ngModel)]="email" (ngModelChange)="handleEmailInputChange()"
                     (focus)="isInputEmailEmpty = !email" (blur)="isInputEmailEmpty = !email; validateEmail()"
@@ -47,7 +47,7 @@
 
                 <!-- TEXTAREA -->
 
-                <textarea id="message" required cols="30" rows="10" method="POST" data-aos="fade-left"
+                <textarea id="message" required cols="30" rows="10" method="POST" data-aos="zoom-in-up"
                     [ngClass]="{ 'empty': isInputMessageEmpty, 'filled': !isInputMessageEmpty }"
                     placeholder="Your message" #messageField [(ngModel)]="message"
                     (ngModelChange)="handleMessageInputChange()" (focus)="isInputMessageEmpty = !message"
@@ -56,9 +56,9 @@
 
                 <!-- ################################ -->
 
-                <div class="sendBtnAndEmailSend" data-aos="fade-left">
+                <div class="sendBtnAndEmailSend" data-aos="zoom-in-up">
                     <button id="sendBtn" class="sendMessageBtn" #sendButton translate>Send
-                        message :)
+                        message
                     </button>
                     <div id="loader" class="loaderDNone">
                         <div class="loader">

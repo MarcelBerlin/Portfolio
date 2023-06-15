@@ -17,8 +17,17 @@
         <label for="active" class="close" #closeBtn></label>
         <div class="wrapper">
             <ul>
-                
-                
+                <li><a (click)="closeMenu()" href="#aboutMe" translate>About me</a></li>
+                <li><a (click)="closeMenu()" href="#skills" translate>Skills</a></li>
+                <li><a (click)="closeMenu()" href="#portfolio" translate>Portfolio</a></li>
+                <li><a (click)="closeMenu()" href="#contact" translate>Contact</a></li>
+                <!-- <li>
+                    <a (click)="translateSite('en')" (click)="closeMenu()"><span class="de-en"
+                            [ngClass]="{'language': selectedLanguage === 'en'}">EN</span></a>
+                    <span class="stroke">|</span>
+                    <a (click)="translateSite('de')" (click)="closeMenu()"><span class="de-en"
+                            [ngClass]="{'language': selectedLanguage === 'de'}">DE</span></a>
+                </li> -->
             </ul>
         </div>
     </div>
