@@ -7,6 +7,10 @@
     display: flex;    
     padding-top: 20vh;
     padding-bottom: 20vh;
+
+    @media (max-width: 1440px) {
+        padding-top: 5vh;
+      }
     
 }
 
