@@ -131,7 +131,7 @@
 }
 
 .zIndex {
-  z-index: 10;
+  z-index: 6;
 }
 
 .portfolio-project1 {
@@ -350,7 +350,7 @@
   overflow: hidden;
 
   img {
-    z-index: 2;
+    z-index: 1;
     width: 40vw;
     height: auto;
     filter: blur(26.5px);
@@ -371,10 +371,10 @@
   position: absolute;
   right: 0;
   top: 4700px;
-  overflow: hidden;
+  overflow-x: hidden;
 
   img {
-    z-index: 2;
+    z-index: 1;
     height: 80vh;
   }
 

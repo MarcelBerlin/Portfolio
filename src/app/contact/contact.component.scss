@@ -24,10 +24,10 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1150px) {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;        
     }
 }
 
@@ -36,9 +36,9 @@
     flex-direction: column;
     padding-right: 15%;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1150px) {
         align-items: flex-start;
-        text-align: left;
+        text-align: left;       
     }
 }
 
@@ -55,9 +55,26 @@
         text-shadow: 0px 0px 5px white;
     }
 
+    @media (max-width: 1440px) {      
+        
+        h1 {
+            font-size: 70px;
+            line-height: 60px;
+        }
+    }
+
+    @media (max-width: 1370px) {
+        h1 {
+            font-size: 65px;
+            line-height: 60px;
+        }
+    }
+
     @media (max-width: 1000px) {
         h1 {
             margin-left: 110px;
+            font-size: 60px;
+            line-height: 60px;
         }
     }
 }
@@ -123,7 +140,7 @@
         }
     }      
 
-    @media (max-width: 1000px) {        
+    @media (max-width: 1150px) {        
         margin-right: 0;
         margin-top: 50px;
     }
@@ -222,9 +239,10 @@
             }
         }
 
-        @media (max-width: 1000px) {
-            width: 500px;            
+        @media (max-width: 1440px) {
+            width: 450px;
         }
+      
     }
 
     textarea {
@@ -278,9 +296,10 @@
             }
         }
 
-        @media (max-width: 1000px) {
-            width: 500px;
+        @media (max-width: 1440px) {
+            width: 450px;
         }
+       
     }
 }
 
