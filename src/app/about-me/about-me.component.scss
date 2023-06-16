@@ -134,6 +134,7 @@
 .about-me-picture {  
   display: flex;
   align-items: center; 
+  // overflow: hidden;
      
   z-index: 2;
 
@@ -173,6 +174,7 @@
 .about-me-horizontal-line {
   position: absolute;
   right: 0;
+  overflow: hidden;
   min-width: 20vw;
   border-bottom: 4px solid #70e61c;
 
