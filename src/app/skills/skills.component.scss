@@ -7,18 +7,11 @@
   padding-left: 120px;
   padding-top: 20vh;
 
-  @media (max-width: 1440px) {
-    padding-top: 5vh;
-  }
-
   @media (max-width: 1150px) {    
-    padding-top: 15vh;
+    padding-top: 30vh;
     flex-direction: column-reverse;    
   }
-
-  @media (max-width: 1000px) {    
-    padding-bottom: -5vh;
-  }
+  
 }
 
 .my-skills {

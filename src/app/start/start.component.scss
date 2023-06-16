@@ -6,10 +6,7 @@
   @media (max-width: 1000px) {
     height: 100vh;   
   }
-
-  @media (max-width: 500px) {
-    height: 80vh;
-  }
+  
 }
 
 .profile {
@@ -93,19 +90,19 @@
   }
 
   @media (max-width: 500px) {
-    left: 75px;
-    top: -150px;
+    left: 95px;
+    top: -100px;
     width: 300px;
   }
 
   @media (max-width: 450px) {
     left: 55px;
-    top: -150px;    
+    top: -100px;    
   }
 
   @media (max-width: 400px) {
     left: 40px;
-    top: -150px;    
+    top: -100px;    
   }
  
 }
@@ -179,12 +176,6 @@
   }
 
 
-
-
-
-
-
-  
 }
 
 .introduction {
