@@ -22,20 +22,20 @@
 }
 
 .my-skills {
-  z-index: 3;
-  padding-right: 120px;
+  z-index: 3;  
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: flex-start;
 
   @media (max-width: 1440px) {
-    padding-left: 0;
+    padding-left: 0;    
   }
 
   @media (max-width: 1000px) {
     padding-left: 0;
     padding-bottom: 20vh;
+    padding-right: 120px;
   }
 
   @media (max-width: 700px) {
@@ -78,7 +78,16 @@
       cursor: pointer;
       animation: bounce 425ms ease-in-out;
     }
-  
+
+    @media (max-width: 1000px) {
+      margin: 10px;      
+    }  
+  }
+
+  @media (max-width: 1000px) {
+    width: 180px;
+    height: 180px;
+    
   }
 
   @media (max-width: 700px) {
@@ -127,8 +136,7 @@
   }
 
   @media (max-width: 1370px) {
-    h1 {
-      font-size: 65px;
+    h1 {      
       line-height: 60px;
     }
   }
@@ -160,18 +168,21 @@
     position: absolute;
     border-bottom: 4px solid #9747ff;
     border-radius: 4px;
-    width: 120px;
+    min-width: 120px;
     top: 0;
     right: 0;    
     margin-top: -50px;
 
     @media (max-width: 1440px) {
       top: -15px;
-      width: 5vw;
     }
 
     @media (max-width: 1024px) {
       top: -18px;
+    }
+
+    @media (max-width: 1000px) {
+      min-width: 6vw;
     }
   }
 
@@ -185,13 +196,10 @@
       top: 125px;
     }
 
-    @media (max-width: 1370px) {
+    @media (max-width: 1293px) {
       top: 200px;
     }
-
-    @media (max-width: 1282px) {
-      top: 220px;
-    }
+   
 
     @media (max-width: 1155px) {
       right: 5%
@@ -242,13 +250,22 @@
   justify-content: flex-end;
   margin-right: 150px;
 
+  @media (max-width: 1000px) {
+    margin-right: 80px;
+  }
+
+  @media (max-width: 600px) {
+    margin-right: 50px;
+  }
+
+
   .skills-subheadline {
     font-size: 16px;
     line-height: 23px;
 
     @media (max-width: 1000px) {
       font-size: calc(16px + 0.390625vw);
-      margin: 8px;
+      margin: 8px;      
     }
 
     @media (max-width: 700px) {      
@@ -257,6 +274,7 @@
         margin-right: 0;      
     }
   }
+  
 }
 
 .skills-green-shadow {
