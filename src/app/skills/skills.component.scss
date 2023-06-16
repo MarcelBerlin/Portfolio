@@ -57,6 +57,7 @@
   @media (max-width: 580px) {
     margin-left: 0vw;
   }
+
 }
 
 .skills-icons {
@@ -82,6 +83,7 @@
     @media (max-width: 1000px) {
       margin: 10px;      
     }  
+    
   }
 
   @media (max-width: 1000px) {
@@ -94,6 +96,12 @@
     width: 150px;
     height: 150px;
   }
+
+  @media (max-width: 400px) {
+    width: 130px;
+    height: 130px;
+  }
+
 
 }
 
@@ -163,6 +171,7 @@
       font-size: 30px;
     }
   }
+  
 
   .purple-line {
     position: absolute;
