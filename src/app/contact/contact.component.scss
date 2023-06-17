@@ -191,6 +191,7 @@
 }
 
 .formInput {
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -365,6 +366,7 @@
 }
 
 .sendMessageBtn {
+  z-index: 5;
   background: #70e61c;
   box-shadow: 0 0 5px #70e61c;
   border-radius: 10px;
@@ -466,19 +468,24 @@
   }
 }
 
-.purpleShadow {
+.purpleShadow {  
   position: absolute;
   z-index: 1;
-  left: 0;
-  top: 750px;
-  overflow: hidden;
+  left: 0; 
+  top: 650px;
+   
 
   img {
+    
     height: 65vh;    
   }
 
+  @media (max-width: 1150px) {
+    top: 850px;
+  }
+
   @media (max-width: 1000px) {
-    top: 1000px;
+    top: 950px;
     img {
       height: 40vh;
     }
