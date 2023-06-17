@@ -11,6 +11,22 @@
     padding-top: 30vh;
     flex-direction: column-reverse;    
   }
+
+  @media (max-width: 369px) {
+    padding-left: 100px;
+  }
+
+  @media (max-width: 329px) {
+    padding-left: 80px;
+  }
+
+  @media (max-width: 300px) {
+    padding-left: 70px;
+  }
+
+  @media (max-width: 280px) {
+    padding-left: 70px;
+  }
   
 }
 
@@ -37,17 +53,17 @@
   @media (max-width: 650px) {    
     padding-right: 80px;
   }
-
-  @media (max-width: 630px) {
-   
-  }
-
-  @media (max-width: 630px) {
   
+  @media (max-width: 500px) {
+    padding-right: 50px;
   }
 
-  @media (max-width: 580px) {
-    
+  @media (max-width: 400px) {
+    padding-right: 10px;
+  }
+
+  @media (max-width: 350px) {
+    padding-right: 0;    
   }
 
 }

@@ -19,6 +19,10 @@
     padding-right: 0;      
   }
 
+  @media (min-width: 2000px) {
+    padding-top: 18vh;
+  }
+
   
 }
 
@@ -94,7 +98,12 @@
 
 .about-me-title {
   @media (max-width: 500px) {
-    margin-right: 150px;
+    margin-right: 100px;
+    text-align: left;
+  }
+
+  @media (max-width: 300px) {
+    margin-right: 70px;
     text-align: left;
   }
 }
@@ -143,8 +152,8 @@
     border-radius: 50%;
     margin-left: 150px;
     margin-right: 20vw;
-    height: 30vw;
-    width: 30vw;
+    height: 25vw;
+    width: 25vw;
     object-fit: contain;
 
     @media (max-width: 1660px) {
@@ -202,19 +211,19 @@
   top: 80vh;
   overflow: hidden;
 
-  @media (max-width: 700px) {
-    top: 75vh;
+  @media (max-width: 1380px) {
+    top: 70vh;
   }
 
   @media (max-width: 500px) {
     left: 65vw;
-    top: 75vh;
+    
   }
 
   img {
     z-index: 2;
     width: auto;
-    height: 120vh;
+    height: 110vh;
 
     @media (max-width: 1440px) {
       height: 100vh;
