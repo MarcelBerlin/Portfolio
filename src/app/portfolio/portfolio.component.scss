@@ -541,12 +541,11 @@
   position: absolute;
   top: 3800px;
   overflow: hidden;
+  z-index: 2;
 
-  img {
-    z-index: 2;
+  img {    
     width: auto;
     height: 90vh;
-
 
 
     @media (max-width: 1440px) {
@@ -584,11 +583,7 @@
   @media (max-width: 1150px) {
     top: 4400px;
   }
-
-  // @media (max-width: 1070px) {
-  //   top: 4300px;
-  // }
-
+ 
   @media (max-width: 1000px) {
     top: 4400px;
   }
@@ -650,11 +645,11 @@
 .portfolio-green-shadow {
   position: absolute;
   right: 0;
-  top: 4700px;
+  top: 4400px;
   overflow-x: hidden;
+  z-index: 2;
 
-  img {
-    z-index: 1;
+  img {    
     height: 80vh;
     @media (max-width: 870px) {
       height: 65vh;
@@ -712,9 +707,7 @@
 
   @media (max-width: 519px) {
     top: 6200;
-  }
-
- 
+  } 
 
   @media (max-width: 500px) {
     top: 5700px;
@@ -755,8 +748,6 @@
   @media (max-width: 300px) {
     top: 7000px;
   }
-
-
 
   @media (min-width: 2000px) {
     top: 5200px;
