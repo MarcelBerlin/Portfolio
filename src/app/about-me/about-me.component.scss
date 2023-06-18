@@ -145,9 +145,10 @@
   align-items: center; 
   // overflow: hidden;
      
-  z-index: 2;
+ 
 
   .about-me-profile-img {
+    z-index: 3;
     border: 4px solid #70e61c;
     border-radius: 50%;
     margin-left: 150px;
@@ -181,6 +182,7 @@
 }
 
 .about-me-horizontal-line {
+  z-index: 3;
   position: absolute;
   right: 0;
   overflow: hidden;
