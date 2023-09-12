@@ -23,6 +23,7 @@ export class ContactComponent {
   isInputNameEmpty: boolean = true; // Initialize as empty
   isInputEmailEmpty: boolean = true; // Initialize as empty
   isInputMessageEmpty: boolean = true; // Initialize as empty
+  isFormSubmitted: boolean = false; // Add a flag to track form submission
 
   constructor() {
 
@@ -73,6 +74,7 @@ export class ContactComponent {
     let messageField = this.messageField.nativeElement;
     this.mailSendToServer(nameField, emailField, messageField);
     this.BtnDisable();
+    this.isFormSubmitted = true; 
     console.log('sending email', this.myForm);
   }
 
