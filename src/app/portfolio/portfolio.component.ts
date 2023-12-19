@@ -39,13 +39,13 @@ export class PortfolioComponent implements OnInit {
       linkGit: 'https://github.com/MarcelBerlin/Pokedex.git'
     },
     {
-      name: 'Portfolio',
-      img: 'portfolio.png', 
+      name: 'DaBubble',
+      img: 'DABubble-laptop.png', 
       language: 'Angular | TypeScript | HTML | CSS',
-      text: 'Interactive portfolio demonstrating my Frontend development skills and creativity',
-      link: 'https://marcelberlin-developer.de/',
-      linkGit: 'https://github.com/MarcelBerlin/Portfolio.git'
-    },
+      text: 'DaBubble is a group created collaborative communication platform that enables teams to chat in real-time, exchange files, and organize projects.',
+      link: 'https://dabubble.marcelberlin-developer.de/',
+      linkGit: 'https://github.com/MarcelBerlin/Angular-DABubble.git'
+    },    
   ];
 
 }
