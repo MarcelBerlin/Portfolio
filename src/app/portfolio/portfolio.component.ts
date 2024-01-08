@@ -15,6 +15,14 @@ export class PortfolioComponent implements OnInit {
 
   projects: any = [
     {
+      name: 'DaBubble',
+      img: 'DABubble-laptop.png', 
+      language: 'Angular | TypeScript | HTML | CSS',
+      text: 'DaBubble is a group created collaborative communication platform that enables teams to chat in real-time, exchange files, and organize projects.',
+      link: 'https://dabubble.marcelberlin-developer.de/',
+      linkGit: 'https://github.com/MarcelBerlin/Angular-DABubble.git'
+    },    
+    {
       name: 'Join',
       img: 'JOIN.png', 
       language: 'JavaScript | HTML | CSS | Git',
@@ -29,22 +37,6 @@ export class PortfolioComponent implements OnInit {
       text: 'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
       link: 'https://sharkie.marcelberlin-developer.de/',
       linkGit: 'https://github.com/MarcelBerlin/sharkie.git'
-    },
-    {
-      name: 'Pokedex',
-      img: 'pokedex-detail.png', 
-      language: 'JavaScript | HTML | CSS | Api',
-      text: 'Based on PokéAPI a simple library for some information about Pokemons.',
-      link: 'https://pokedex.marcelberlin-developer.de/',
-      linkGit: 'https://github.com/MarcelBerlin/Pokedex.git'
-    },
-    {
-      name: 'DaBubble',
-      img: 'DABubble-laptop.png', 
-      language: 'Angular | TypeScript | HTML | CSS',
-      text: 'DaBubble is a group created collaborative communication platform that enables teams to chat in real-time, exchange files, and organize projects.',
-      link: 'https://dabubble.marcelberlin-developer.de/',
-      linkGit: 'https://github.com/MarcelBerlin/Angular-DABubble.git'
     },    
   ];
 
