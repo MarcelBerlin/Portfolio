@@ -4,11 +4,10 @@
         <div class="portfolio-title-position">
             <div class="portfolio-title">
                 <div class="portfolio-horizontal-small"></div>
-                <h1 data-aos="flip-up">Portfolio</h1>                
+                <h1 data-aos="flip-up">{{ 'PORTFOLIO.TITLE' | translate }}</h1>                
                 <div class="portfolio-horizontal-big"></div>
             </div>
-            <span data-aos="fade-up">The following applications are a small sample of my work - please feel free to try them
-                out.</span>
+            <span data-aos="fade-up">{{ 'PORTFOLIO.INTRO' | translate }}</span>
         </div>
     </div>
 
@@ -23,7 +22,7 @@
             <div class="project-description-1" data-aos="zoom-in-up">
                 <h1>{{ project.name }}</h1>
                 <h2>{{ project.language }}</h2>
-                <span>{{ project.text }}</span>
+                <span>{{ getProjectText(project.textKey) }}</span>
                 <div class="project-links-1">
                     <a href="{{ project.link }}" target="_blank"><button class="live-test-btn">Live test</button></a>
                     <a href="{{ project.linkGit }}" target="_blank"><button class="github-btn">Github</button></a>
@@ -36,7 +35,7 @@
             <div class="project-description-2" data-aos="zoom-in-up">
                 <h1>{{ project.name }}</h1>
                 <h2>{{ project.language }}</h2>
-                <span>{{ project.text }}</span>
+                <span>{{ getProjectText(project.textKey) }}</span>
                 <div class="project-links-2">
                     <a href="{{ project.link }}" target="_blank"><button class="live-test-btn">Live test</button></a>
                     <a href="{{ project.linkGit }}" target="_blank"><button class="github-btn">Github</button></a>
@@ -58,12 +57,8 @@
         <img src="/assets/img/Green shadow left.png">
     </div>
 
-
-
-
-
-
-
-
-
 </div>
+
+
+
+

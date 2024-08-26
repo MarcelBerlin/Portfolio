@@ -10,7 +10,29 @@
         "I_AM": "Ich bin",
         "NAME": "Marcel Berlin",
         "JOB_TITLE": "FRONTEND-ENTWICKLER",
-        "CONTACT_BTN": "Lass uns reden!"
+        "CONTACT_BTN": "Lass uns reden!",
+        "SCROLL": "Runter scrollen"
+    },
+    "SKILLS": {
+        "TITLE": "Meine Fähigkeiten",
+        "SUBHEADLINE": "Ich habe Erfahrungen in meinen Frontend-Entwicklungsfähigkeiten gesammelt, die es mir ermöglicht haben, verschiedene spannende Projekte zu erstellen.",
+        "CONTACT_BTN": "Kontakt aufnehmen"
+    },
+    "PORTFOLIO": {
+        "TITLE": "Portfolio",
+        "INTRO": "Die folgenden Anwendungen sind eine kleine Auswahl meiner Arbeiten - bitte probiere sie gerne aus."
+        
+    },  
+
+    "PROJECTS": {
+        "DABubble": "DaBubble ist eine kollaborative Kommunikationsplattform, die es Teams ermöglicht, in Echtzeit zu chatten, Dateien auszutauschen und Projekte zu organisieren.",
+        "Join": "Ein Gruppen-Kanban-Board",
+        "Sharkie": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Schwertwal zu kämpfen."
+    },
+
+    "BUTTONS": {
+        "LIVE_TEST": "Live Test",
+        "GITHUB": "Github"
     }
 
 
