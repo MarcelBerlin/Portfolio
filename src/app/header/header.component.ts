@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -8,13 +9,17 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class HeaderComponent {
   @ViewChild('closeBtn') closeBtn!: ElementRef;
 
-  constructor() { }
+  constructor(public translate: TranslateService) { }
 
 
   closeMenu() {
     if (this.closeBtn) {
       this.closeBtn.nativeElement.click();
     }
+  }
+
+  changeLanguage(language: string) {
+    this.translate.use(language);
   }
 
 }

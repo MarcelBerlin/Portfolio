@@ -1,0 +1,17 @@
+{
+    "ABOUT_ME": {
+        "TITLE": "Über mich",
+        "INTRO": "Hallo, mein Name ist Marcel und ich bin Frontend-Entwickler aus Erkelenz, Deutschland. Meine Leidenschaft für Computer und alles, was damit zu tun hat, reicht bis in die Mitte der 90er Jahre zurück. Dort habe ich erste Erfahrungen in der IT gesammelt und die Faszination fand ihren Anfang. Im letzten Jahr habe ich mich schließlich entschieden, Frontend-Entwickler zu werden, um meine Zukunft dieser aufregenden Branche zu widmen.",
+        "TEXT1": "Ich liebe es, mich ständig weiterzuentwickeln, neue Ideen umzusetzen und durch Herausforderungen zu wachsen. Sowohl alleine als auch im Team arbeite Ich stets strukturiert und agil.",
+        "TEXT2": "Nun bin ich bereit, meine Karriere als Entwickler zu starten und spannende Herausforderungen gemeinsam im Team zu realisieren."
+    },
+    
+    "INTRODUCTION": {
+        "I_AM": "Ich bin",
+        "NAME": "Marcel Berlin",
+        "JOB_TITLE": "FRONTEND-ENTWICKLER",
+        "CONTACT_BTN": "Lass uns reden!"
+    }
+
+
+}

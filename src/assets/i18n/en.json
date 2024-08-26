@@ -1,0 +1,17 @@
+{
+    "ABOUT_ME": {
+        "TITLE": "About Me",
+        "INTRO": "Hello, my name is Marcel, and I am a frontend developer from Erkelenz, Germany. My passion for computers and everything related to them dates back to the mid-90s. There, I gained my first experiences in IT, and the fascination began. Last year, I decided to become a frontend developer to dedicate my future to this exciting industry.",
+        "TEXT1": "I love constantly developing myself, implementing new ideas, and growing through challenges. Whether working alone or as part of a team, I always work in a structured and agile manner.",
+        "TEXT2": "I am now ready to start my career as a developer and to tackle exciting challenges together with a team."
+    },
+
+    "INTRODUCTION": {
+        "I_AM": "I am",
+        "NAME": "Marcel Berlin",
+        "JOB_TITLE": "FRONTEND DEVELOPER",
+        "CONTACT_BTN": "Let's talk!"
+    }
+
+    
+}

@@ -29,6 +29,7 @@
 .headerMenu {
     margin-right: 120px;
     display: flex;    
+    align-items: center;
 
     a {
         color: white;
@@ -46,6 +47,23 @@
         }
     }    
 }
+
+.language-flags {       
+    img {
+        border-radius: 50%;
+        border: 2px solid rgba(0, 0, 0, 0);        
+        width: 40px;
+        height: 40px;
+        margin-left: 15px;
+        transition: all 125ms ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            border-color: #70E61C;
+        }
+    }
+}
+
 
 
 .de-en {
