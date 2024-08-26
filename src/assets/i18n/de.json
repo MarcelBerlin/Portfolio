@@ -33,6 +33,21 @@
     "BUTTONS": {
         "LIVE_TEST": "Live Test",
         "GITHUB": "Github"
+    },
+
+    "CONTACT": {
+        "TITLE": "Kontakt",
+        "SECTION_TEXT_HEADER": "Ein Problem zu lösen?",
+        "SECTION_TEXT_BODY": "Kontaktieren Sie mich über dieses Formular, ich bin interessiert, von Ihnen zu hören, Ihre Ideen zu erfahren und zu Ihren Projekten mit meiner Arbeit beizutragen.",
+        "SECTION_TEXT_FOOTER": "Brauchen Sie einen Frontend-Entwickler? <b>Kontaktieren Sie mich!</b>",
+        "SEND_BUTTON": "Nachricht senden",
+        "EMAIL_SENT": "E-Mail wurde gesendet.",
+        "NAME_PLACEHOLDER": "Ihr Name",
+        "EMAIL_PLACEHOLDER": "Ihre E-Mail",
+        "MESSAGE_PLACEHOLDER": "Ihre Nachricht",
+        "NAME_TITLE": "Bitte geben Sie Ihren Namen ein",
+        "EMAIL_TITLE": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+        "MESSAGE_TITLE": "Bitte geben Sie Ihre Nachricht ein"
     }
 
 

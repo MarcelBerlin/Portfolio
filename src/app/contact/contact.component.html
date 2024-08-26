@@ -1,65 +1,50 @@
 <div class="contact-container" id="contact">
     
-
     <div class="contact-title">
         <div class="contact-horizontal-line"></div>
-        <h1 data-aos="flip-up">Contact</h1>
+        <h1 data-aos="flip-up">{{ 'CONTACT.TITLE' | translate }}</h1>
     </div>
-
+    
     <div class="contact-details">
         <div class="contact-left">
-
             <div class="contact-section-text" data-aos="zoom-in-up">
-                <h2>Got a problem to solve?</h2>
-                <span>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing
-                    to
-                    your projects with my work</span>
+                <h2>{{ 'CONTACT.SECTION_TEXT_HEADER' | translate }}</h2>
+                <span>{{ 'CONTACT.SECTION_TEXT_BODY' | translate }}</span>
                 <br>
                 <br>
-                <span>Need a Frontend developer? <b>Contact me!</b></span>
+                <span [innerHTML]="'CONTACT.SECTION_TEXT_FOOTER' | translate"></span>
             </div>
         </div>
-
+    
         <div class="contact-right">
-
             <form (submit)="sendMail()" method="POST" class="formInput" ngNativeValidate #myForm>
-
                 <!-- NAME INPUT -->
-
                 <input id="name" required type="text" data-aos="zoom-in-up"
-                    [ngClass]="{ 'empty': isInputNameEmpty, 'filled': !isInputNameEmpty }" placeholder="Your name"
+                    [ngClass]="{ 'empty': isInputNameEmpty, 'filled': !isInputNameEmpty }"
+                    placeholder="{{ 'CONTACT.NAME_PLACEHOLDER' | translate }}"
                     #nameField [(ngModel)]="name" (ngModelChange)="handleNameInputChange()"
                     (focus)="isInputNameEmpty = !name" (blur)="isInputNameEmpty = !name"
-                    [ngModelOptions]="{standalone: true}" title="Please enter your name" />
-
-                <!-- ################################ -->
-
+                    [ngModelOptions]="{standalone: true}" title="{{ 'CONTACT.NAME_TITLE' | translate }}" />
+    
                 <!-- EMAIL INPUT -->
-
                 <input id="email" required type="email" data-aos="zoom-in-up"
-                    [ngClass]="{ 'empty': isInputEmailEmpty, 'filled': !isInputEmailEmpty, 'valid': isEmailValid  }"
-                    placeholder="Your email" #emailField [(ngModel)]="email" (ngModelChange)="handleEmailInputChange()"
+                    [ngClass]="{ 'empty': isInputEmailEmpty, 'filled': !isInputEmailEmpty, 'valid': isEmailValid }"
+                    placeholder="{{ 'CONTACT.EMAIL_PLACEHOLDER' | translate }}" #emailField [(ngModel)]="email" (ngModelChange)="handleEmailInputChange()"
                     (focus)="isInputEmailEmpty = !email" (blur)="isInputEmailEmpty = !email; validateEmail()"
                     [ngModelOptions]="{standalone: true}" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                    title="Please enter a valid email address" />
-
-                <!-- ################################ -->
-
+                    title="{{ 'CONTACT.EMAIL_TITLE' | translate }}" />
+    
                 <!-- TEXTAREA -->
-
                 <textarea id="message" required cols="30" rows="10" method="POST" data-aos="zoom-in-up"
                     [ngClass]="{ 'empty': isInputMessageEmpty, 'filled': !isInputMessageEmpty }"
-                    placeholder="Your message" #messageField [(ngModel)]="message"
+                    placeholder="{{ 'CONTACT.MESSAGE_PLACEHOLDER' | translate }}" #messageField [(ngModel)]="message"
                     (ngModelChange)="handleMessageInputChange()" (focus)="isInputMessageEmpty = !message"
                     (blur)="isInputMessageEmpty = !message" [ngModelOptions]="{standalone: true}"
-                    title="Please enter your message"></textarea>
-
-                <!-- ################################ -->
-
+                    title="{{ 'CONTACT.MESSAGE_TITLE' | translate }}"></textarea>
+    
+                <!-- SEND BUTTON -->
                 <div class="sendBtnAndEmailSend" data-aos="zoom-in-up">
-                    <button id="sendBtn" class="sendMessageBtn" #sendButton translate>Send
-                        message
-                    </button>
+                    <button id="sendBtn" class="sendMessageBtn" #sendButton>{{ 'CONTACT.SEND_BUTTON' | translate }}</button>
                     <div id="loader" class="loaderDNone">
                         <div class="loader">
                             <div class="line line1"></div>
@@ -69,8 +54,7 @@
                             <div class="line line5"></div>
                         </div>
                     </div>
-
-                    <div class="emailSend loaderDNone" id="sendEmail" translate>E-Mail has been sent.</div>
+                    <div class="emailSend loaderDNone" id="sendEmail">{{ 'CONTACT.EMAIL_SENT' | translate }}</div>
                 </div>
             </form>
             <div class="goUp" data-aos="fade-in">
@@ -78,6 +62,10 @@
             </div>
         </div>
     </div>
+    
+
+
+
 
     <div class="purpleShadow">
         <img src="/assets/img/contact-shadow.png">
