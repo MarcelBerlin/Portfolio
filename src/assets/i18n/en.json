@@ -1,4 +1,12 @@
 {
+    "HEADER": {
+        "ABOUT_NAV": "About me",
+        "SKILLS_NAV": "Skills",
+        "PORTFOLIO_NAV": "Portfolio",
+        "CONTACT_NAV": "Contact"
+    },
+    
+    
     "ABOUT_ME": {
         "TITLE": "About Me",
         "INTRO": "Hello, my name is Marcel, and I am a frontend developer from Erkelenz, Germany. My passion for computers and everything related to them dates back to the mid-90s. There, I gained my first experiences in IT, and the fascination began. Last year, I decided to become a frontend developer to dedicate my future to this exciting industry.",

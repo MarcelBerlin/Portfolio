@@ -1,4 +1,12 @@
 {
+    "HEADER": {
+        "ABOUT_NAV": "Über mich",
+        "SKILLS_NAV": "Fähigkeiten",
+        "PORTFOLIO_NAV": "Portfolio",
+        "CONTACT_NAV": "Kontakt"
+    },
+    
+    
     "ABOUT_ME": {
         "TITLE": "Über mich",
         "INTRO": "Hallo, mein Name ist Marcel und ich bin Frontend-Entwickler aus Erkelenz, Deutschland. Meine Leidenschaft für Computer und alles, was damit zu tun hat, reicht bis in die Mitte der 90er Jahre zurück. Dort habe ich erste Erfahrungen in der IT gesammelt und die Faszination fand ihren Anfang. Im letzten Jahr habe ich mich schließlich entschieden, Frontend-Entwickler zu werden, um meine Zukunft dieser aufregenden Branche zu widmen.",

@@ -162,15 +162,29 @@
 
 .mobile-flags {              
    
-    img {       
-        border-radius: 50%;              
-    }    
+    img {             
+        border-radius: 50%;             
+    }   
+    
+    @media (max-width: 400px) {
+        img {
+            width: 35px;
+            height: 35px;
+            margin-right: -10px;
+        }
+    }
 }
 
 .en-flag {
     img {
-        margin-right: 35%;
+        margin-right: 60px;        
     }
+
+    @media (max-width: 400px) {
+        img {
+            margin-right: 40px;        
+        }
+    }    
 }
 
 
