@@ -10,8 +10,14 @@ import AOS from 'aos';
 })
 export class AppComponent implements OnInit {
   title = 'Portfolio';
+  currentLanguage: string;
 
-  constructor(public router: Router, public translate: TranslateService) {}
+  constructor(public router: Router, public translate: TranslateService) {
+    this.translate.onLangChange.subscribe((event) => {
+      this.currentLanguage = event.lang;
+    });    
+
+  }
 
   ngOnInit(): void {
     AOS.init();
@@ -20,6 +26,14 @@ export class AppComponent implements OnInit {
     this.translate.setDefaultLang('en');
     // Optionally set the initial language to English
     this.translate.use('en');
+
+    // Initiale Sprache setzen
+    this.currentLanguage = this.translate.currentLang || 'en';  // Standard 'en'
+  }
+
+  // Dynamische CSS-Klasse zurückgeben
+  getDynamicClass(baseClass: string) {
+    return this.currentLanguage === 'de' ? `${baseClass}-german` : baseClass;
   }
 
   changeLanguage(language: string) {

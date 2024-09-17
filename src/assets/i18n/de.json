@@ -9,7 +9,7 @@
     
     "ABOUT_ME": {
         "TITLE": "Über mich",
-        "INTRO": "Hallo, mein Name ist Marcel und ich bin Frontend-Entwickler aus Erkelenz, Deutschland. Meine Leidenschaft für Computer und alles, was damit zu tun hat, reicht bis in die Mitte der 90er Jahre zurück. Dort habe ich erste Erfahrungen in der IT gesammelt und die Faszination fand ihren Anfang. Im letzten Jahr habe ich mich schließlich entschieden, Frontend-Entwickler zu werden, um meine Zukunft dieser aufregenden Branche zu widmen.",
+        "INTRO": "Hallo, mein Name ist Marcel und ich bin Frontend-Entwickler aus Erkelenz, Deutschland. Mein Interesse für Computer und alles, was damit zu tun hat, reicht bis in die Mitte der 90er Jahre zurück. Dort habe ich erste Erfahrungen in der IT gesammelt und die Faszination fand ihren Anfang. Diese Faszination entwickelte sich schlussendlich zur Leidenschaft und ich entschloss mich für eine Karriere als Frontend-Entwickler, um meiner Zukunft dieser aufregenden Branche zu widmen.",
         "TEXT1": "Ich liebe es, mich ständig weiterzuentwickeln, neue Ideen umzusetzen und durch Herausforderungen zu wachsen. Sowohl alleine als auch im Team arbeite Ich stets strukturiert und agil.",
         "TEXT2": "Nun bin ich bereit, meine Karriere als Entwickler zu starten und spannende Herausforderungen gemeinsam im Team zu realisieren."
     },
@@ -45,8 +45,8 @@
 
     "CONTACT": {
         "TITLE": "Kontakt",
-        "SECTION_TEXT_HEADER": "Ein Problem zu lösen?",
-        "SECTION_TEXT_BODY": "Kontaktieren Sie mich über dieses Formular, ich bin interessiert, von Ihnen zu hören, Ihre Ideen zu erfahren und zu Ihren Projekten mit meiner Arbeit beizutragen.",
+        "SECTION_TEXT_HEADER": "Gibt es ein Problem zu lösen?",
+        "SECTION_TEXT_BODY": "Kontaktieren sie mich gerne über dieses Formular, ich bin interessiert, von Ihnen zu hören, Ihre Ideen zu erfahren und zu Ihren Projekten mit meiner Arbeit beizutragen.",
         "SECTION_TEXT_FOOTER": "Brauchen Sie einen Frontend-Entwickler? <b>Kontaktieren Sie mich!</b>",
         "SEND_BUTTON": "Nachricht senden",
         "EMAIL_SENT": "E-Mail wurde gesendet.",
