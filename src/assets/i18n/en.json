@@ -9,9 +9,9 @@
     
     "ABOUT_ME": {
         "TITLE": "About Me",
-        "INTRO": "Hello, my name is Marcel, and I am a frontend developer from Erkelenz, Germany. My passion for computers and everything related to them dates back to the mid-90s. There, I gained my first experiences in IT, and the fascination began. This fascination ultimately developed into a passion, and I decided to pursue a career as a front-end developer to dedicate my future to this exciting industry.",
+        "INTRO": "Hello, my name is Marcel Berlin, and I am a frontend developer from Baesweiler, Germany. My interests for computers and everything related to them dates back to the mid-1990s. That's where I first gained experience in IT, and my fascination began. This fascination ultimately developed into a passion, and I decided to pursue a career as a front-end developer. I specialize in JavaScript and Angular and have experience developing web applications, business applications, responsive websites, and small browser games.",
         "TEXT1": "I love constantly developing myself, implementing new ideas, and growing through challenges. Whether working alone or as part of a team, I always work in a structured and agile manner.",
-        "TEXT2": "I am now ready to start my career as a developer and to tackle exciting challenges together with a team."
+        "TEXT2": "Due to my expertise in the field of quality assurance, I work responsibly and have high standards for quality and user-friendliness."
     },
 
     "INTRODUCTION": {
@@ -24,7 +24,7 @@
 
     "SKILLS": {
         "TITLE": "My Skills",
-        "SUBHEADLINE": "I have gained experience in my frontend development skills that have allowed me to create different exciting projects.",
+        "SUBHEADLINE": "I have gained profound experience in my frontend development skills that have allowed me to create different exciting projects.",
         "CONTACT_BTN": "Get in Touch"
     },
 
@@ -36,7 +36,7 @@
 
     "PROJECTS": {
         "DABubble": "DaBubble is a group created collaborative communication platform that enables teams to chat in real-time, exchange files, and organize projects.",
-        "Join": "A group created Kanban-Board",
+        "Join": "A group organizer for creating different tasks based on a Kanban-Board",
         "Sharkie": "A simple Jump-and-Run game based on an object-oriented approach. Help Sharkie to find coins and poison bottles to fight against the killer whale."
     },
 

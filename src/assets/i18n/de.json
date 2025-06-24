@@ -9,32 +9,32 @@
     
     "ABOUT_ME": {
         "TITLE": "Über mich",
-        "INTRO": "Hallo, mein Name ist Marcel und ich bin Frontend-Entwickler aus Erkelenz, Deutschland. Mein Interesse für Computer und alles, was damit zu tun hat, reicht bis in die Mitte der 90er Jahre zurück. Dort habe ich erste Erfahrungen in der IT gesammelt und die Faszination fand ihren Anfang. Diese Faszination entwickelte sich schlussendlich zur Leidenschaft und ich entschloss mich für eine Karriere als Frontend-Entwickler, um meiner Zukunft dieser aufregenden Branche zu widmen.",
-        "TEXT1": "Ich liebe es, mich ständig weiterzuentwickeln, neue Ideen umzusetzen und durch Herausforderungen zu wachsen. Sowohl alleine als auch im Team arbeite Ich stets strukturiert und agil.",
-        "TEXT2": "Nun bin ich bereit, meine Karriere als Entwickler zu starten und spannende Herausforderungen gemeinsam im Team zu realisieren."
+        "INTRO": "Hallo, mein Name ist Marcel Berlin und ich bin Frontend Entwickler aus Baesweiler, Deutschland. Mein Interesse für Computer und alles, was damit zu tun hat, reicht bis in die Mitte der 90er Jahre zurück. Dort habe ich erste Erfahrungen in der IT gesammelt und die Faszination fand ihren Anfang. Diese Faszination entwickelte sich schlussendlich zur Leidenschaft und ich entschloss mich für eine Karriere als Frontend-Entwickler. Ich spezialisiere mich auf JavaScript und Angular und habe Erfahrung in der Entwicklung von Webanwendungen, Geschäftsanwendungen, responsiven Websites und kleinen Browser Spielen.",
+        "TEXT1": "Ich liebe es, mich ständig weiterzuentwickeln, neue Ideen umzusetzen und durch Herausforderungen zu wachsen. Sowohl alleine als auch im Team arbeite ich stets strukturiert und agil.",
+        "TEXT2": "Durch meine Expertise aus dem Bereich der Qualitätssicherung, arbeite ich verantwortungsvoll und habe einen hohen Anspruch auf Qualität und Benutzerfreundlichkeit."
     },
     
     "INTRODUCTION": {
         "I_AM": "Ich bin",
         "NAME": "Marcel Berlin",
-        "JOB_TITLE": "FRONTEND-ENTWICKLER",
-        "CONTACT_BTN": "Lass uns reden!",
+        "JOB_TITLE": "FRONTEND ENTWICKLER",
+        "CONTACT_BTN": "Kontakt",
         "SCROLL": "Runter scrollen"
     },
     "SKILLS": {
         "TITLE": "Meine Fähigkeiten",
-        "SUBHEADLINE": "Ich habe Erfahrungen in meinen Frontend-Entwicklungsfähigkeiten gesammelt, die es mir ermöglicht haben, verschiedene spannende Projekte zu erstellen.",
-        "CONTACT_BTN": "Kontakt aufnehmen"
+        "SUBHEADLINE": "Ich habe tiefgehende Erfahrungen in der Frontend Entwicklung gesammelt, die es mir ermöglicht haben, verschiedene spannende Projekte zu erstellen.",
+        "CONTACT_BTN": "Kontakt"
     },
     "PORTFOLIO": {
         "TITLE": "Portfolio",
-        "INTRO": "Die folgenden Anwendungen sind eine kleine Auswahl meiner Arbeiten - bitte probiere sie gerne aus."
+        "INTRO": "Die folgenden Anwendungen sind eine kleine Auswahl meiner Arbeiten - bitte probieren Sie sie gerne aus."
         
     },  
 
     "PROJECTS": {
         "DABubble": "DaBubble ist eine kollaborative Kommunikationsplattform, die es Teams ermöglicht, in Echtzeit zu chatten, Dateien auszutauschen und Projekte zu organisieren.",
-        "Join": "Ein Gruppen-Kanban-Board",
+        "Join": "Ein Gruppen Organizer, zum Anlegen verschiedener Tasks basierend auf einem Kanban-Board",
         "Sharkie": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Schwertwal zu kämpfen."
     },
 
@@ -46,7 +46,7 @@
     "CONTACT": {
         "TITLE": "Kontakt",
         "SECTION_TEXT_HEADER": "Gibt es ein Problem zu lösen?",
-        "SECTION_TEXT_BODY": "Kontaktieren sie mich gerne über dieses Formular, ich bin interessiert, von Ihnen zu hören, Ihre Ideen zu erfahren und zu Ihren Projekten mit meiner Arbeit beizutragen.",
+        "SECTION_TEXT_BODY": "Kontaktieren Sie mich gerne über dieses Formular, ich freue mich von Ihnen zu hören, Ihre Ideen zu erfahren und zu Ihren Projekten mit meiner Arbeit beizutragen.",
         "SECTION_TEXT_FOOTER": "Brauchen Sie einen Frontend-Entwickler? <b>Kontaktieren Sie mich!</b>",
         "SEND_BUTTON": "Nachricht senden",
         "EMAIL_SENT": "E-Mail wurde gesendet.",

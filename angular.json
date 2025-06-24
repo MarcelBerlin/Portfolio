@@ -15,14 +15,15 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
             "allowedCommonJsDependencies": [
               "lodash"
            ],
-            "outputPath": "dist/portfolio",
+            "outputPath": {
+              "base": "dist/portfolio"
+            },
             "index": "src/index.html",
-            "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -38,7 +39,8 @@
               "src/assets/fonts.scss",      
               "node_modules/aos/dist/aos.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "browser": "src/main.ts"
           },
           "configurations": {
             "production": {
@@ -57,9 +59,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Portfolio:build:production"
+              "buildTarget": "Portfolio:build:production"
             },
             "development": {
-              "browserTarget": "Portfolio:build:development"
+              "buildTarget": "Portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Portfolio:build"
+            "buildTarget": "Portfolio:build"
           }
         },
         "test": {
@@ -109,5 +109,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

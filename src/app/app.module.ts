@@ -12,7 +12,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { StartComponent } from './start/start.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -26,41 +26,31 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    AboutMeComponent,
-    ContactComponent,
-    ImprintComponent,
-    MainpageComponent,
-    PortfolioComponent,
-    StartComponent,
-    SkillsComponent,
-      
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    }),    
-    MatFormFieldModule,
-    MatInputModule,   
-    NgIf,
-    
-     
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        AboutMeComponent,
+        ContactComponent,
+        ImprintComponent,
+        MainpageComponent,
+        PortfolioComponent,
+        StartComponent,
+        SkillsComponent,
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        ReactiveFormsModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        }),
+        MatFormFieldModule,
+        MatInputModule,
+        NgIf], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }

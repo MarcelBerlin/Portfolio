@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-mainpage',
-  templateUrl: './mainpage.component.html',
-  styleUrls: ['./mainpage.component.scss']
+    selector: 'app-mainpage',
+    templateUrl: './mainpage.component.html',
+    styleUrls: ['./mainpage.component.scss'],
+    standalone: false
 })
 export class MainpageComponent {
 

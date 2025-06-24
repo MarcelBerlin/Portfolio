@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-portfolio',
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+    selector: 'app-portfolio',
+    templateUrl: './portfolio.component.html',
+    styleUrls: ['./portfolio.component.scss'],
+    standalone: false
 })
 export class PortfolioComponent implements OnInit {
   projects: any[] = [];
